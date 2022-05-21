@@ -1,8 +1,16 @@
 gg.setVisible(false)
 gg.clearResults()
 print("ownswest & CPM")
-gg.alert(os.date("2022.05.20.16.48.50 ~ %Y.%m.%d.%H.%M.%S\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
-menu=gg.choice({'⚠☀chrome☀','❌🚀ufo🚀','   😁long name😁','⚠🌟body kit🌟','   🚗get vehicle🚗'},nil,'@ownswest ( •̀ ω •́ ) ')
+gg.alert(os.date("GMT+9\n2022.05.21.15.47.50 ~ %Y.%m.%d.%H.%M.%S\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
+menu=gg.choice({
+
+'⚠☀chrome☀',
+'❌🚀ufo🚀',
+'   😁long name😁',
+'⚠🌟body kit🌟',
+'   🚗get vehicle🚗'
+
+},nil,'@ownswest ( •̀ ω •́ ) ')
 
 if menu==1 then
 gg.setVisible(false)
