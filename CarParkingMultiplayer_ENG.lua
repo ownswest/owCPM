@@ -15,7 +15,7 @@ print(now..v.versionName)
 
 function run()
   now = os.date("%H:%M:%S ")
-  print(now.."Execute")
+  print(now.."Run")
   menu=gg.choice({
       
       '⚠☀chrome☀',
@@ -23,7 +23,7 @@ function run()
       '   😁long name😁',
       '⚠🌟body kit🌟',
       '   🚗get vehicle🚗',
-      '                                                                                            EXIT'
+      'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
@@ -352,4 +352,5 @@ while true do
     gg.setVisible(false)
     run()
   end
+  gg.sleep(100)
 end
