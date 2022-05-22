@@ -112,9 +112,13 @@ function run()
     gg.refineNumber("12", gg.TYPE_DWORD)
     gg.getResults(100)
     gg.editAll("250", gg.TYPE_DWORD)
+    now = os.date("%H:%M:%S ")
+    print(now.."Long name Is Possible.")
   end
   
   if menu==4 then
+    now = os.date("%H:%M:%S ")
+    print(now.."Scanning Bodykit Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("#2 bumper")
@@ -167,9 +171,13 @@ function run()
     BD = gg.prompt({''},{[1]='6'},{[1]='text'})
     gg.editAll(BD[1],gg.TYPE_DWORD)
     gg.alert("press ✅")
+    now = os.date("%H:%M:%S ")
+    print(now.."Value : "..BD[1])
   end
   
   if menu==5 then
+    now = os.date("%H:%M:%S ")
+    print(now.."Ready To Get Vehicle")
     num = '85'
     gg.setVisible(false)
     gg.setRanges(gg.REGION_CODE_APP)
@@ -322,13 +330,17 @@ function run()
     gg.editAll(snm,gg.TYPE_DWORD)
     gg.toast('Purchase 18 vehicles in 10 seconds and get the original vehicle')
     gg.setVisible(false)
+    now = os.date("%H:%M:%S ")
+    print(now.."Value : "..snm)
     gg.sleep(10000)
     gg.setVisible(false)
     gg.editAll(num,gg.TYPE_DWORD)
+    now = os.date("%H:%M:%S ")
+    print(now.."Value : "..num)
   end
   
   if menu==6 then
-    processKill()
+    os.exit()
   end
   
   gg.clearResults()
