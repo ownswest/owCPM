@@ -2,15 +2,20 @@ gg.setVisible(false)
 gg.clearResults()
 gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
+now = 0
+
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
-  print(os.date("%H:%M:%S Version 4.8.6.9"))
 else
   gg.alert("Game Version May Not Be Supported")
 end
 
+now = os.date("%H:%M:%S ")
+print(now..v.versionName)
+
 function run()
-  print(os.date("%H:%M:%S Execute"))
+  now = os.date("%H:%M:%S ")
+  print(now.."Execute")
   menu=gg.choice({
       
       '⚠☀chrome☀',
@@ -23,7 +28,8 @@ function run()
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
   if menu==1 then
-    print(os.date("%H:%M:%S Scanning Chrome Values"))
+    now = os.date("%H:%M:%S ")
+    print(now.."Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert('SPECULAR')
@@ -57,11 +63,13 @@ function run()
     gg.editAll(CR[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
-    print(os.date("%H:%M:%S Setting Chrome Value : "))
-    print(CR[1])
+    now = os.date("%H:%M:%S ")
+    print(now.."Value : "..CR[1])
   end
   
   if menu==2 then
+    now = os.date("%H:%M:%S ")
+    print(now.."Scanning Incline Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("INCLINE")
@@ -85,6 +93,8 @@ function run()
     gg.sleep(100)
     gg.setVisible(false)
     gg.alert('press done two times')
+    now = os.date("%H:%M:%S ")
+    print(now.."Value : "..SS[1])
   end
   
   if menu==3 then
