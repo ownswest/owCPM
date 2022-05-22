@@ -2,62 +2,58 @@ gg.setVisible(false)
 gg.clearResults()
 gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
-v = gg.getTargetInfo()
-if v.versionCode ~= 200183 then
- gg.alert(v.versionCode,'Version Is Dangerous')
-end
-
 function scr()
-print(os.date("%H:%M:%S Execute"))
-menu=gg.choice({
-
-'⚠☀chrome☀',
-'❌🚀ufo🚀',
-'   😁long name😁',
-'⚠🌟body kit🌟',
-'   🚗get vehicle🚗'
-
-},nil,'@ownswest ( •̀ ω •́ ) ')
-
-if menu==1 then
-print(os.date("%H:%M:%S Scanning Chrome Values"))
-gg.setVisible(false)
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.alert('SPECULAR')
-gg.setVisible(false)
-gg.toast('#FFFFFF 1/4')
-gg.sleep(5000)
-gg.searchNumber('1',gg.TYPE_FLOAT)
-gg.setVisible(false)
-gg.toast('#000000 2/4')
-gg.sleep(5000)
-gg.refineNumber('0')
-gg.sleep(100)
-gg.refineNumber('0')
-gg.setVisible(false)
-gg.toast('#FFFFFF 3/4')
-gg.sleep(5000)
-gg.refineNumber('1')
-gg.sleep(100)
-gg.refineNumber('1')
-gg.setVisible(false)
-gg.toast('#000000 4/4')
-gg.sleep(5000)
-gg.refineNumber('0')
-gg.sleep(100)
-gg.refineNumber('0')
-gg.setVisible(false)
-gg.sleep(100)
-gg.getResults(100)
-gg.setVisible(false)
-CR = gg.prompt({''},{[1]='-8'},{[1]='text'})
-gg.editAll(CR[1],gg.TYPE_FLOAT)
-gg.sleep(100)
-gg.setVisible(false)
-print(os.date("%H:%M:%S Setting Chrome Value : "))
-print(CR[1])
-end
-
+  print(os.date("%H:%M:%S Execute"))
+  menu=gg.choice({
+   
+   '⚠☀chrome☀',
+   '❌🚀ufo🚀',
+   '   😁long name😁',
+   '⚠🌟body kit🌟',
+   '   🚗get vehicle🚗'.
+   '                   EXIT'
+  
+  },nil,'@ownswest ( •̀ ω •́ ) ')
+  
+  if menu==1 then
+  print(os.date("%H:%M:%S Scanning Chrome Values"))
+  gg.setVisible(false)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.alert('SPECULAR')
+  gg.setVisible(false)
+  gg.toast('#FFFFFF 1/4')
+  gg.sleep(5000)
+  gg.searchNumber('1',gg.TYPE_FLOAT)
+  gg.setVisible(false)
+  gg.toast('#000000 2/4')
+  gg.sleep(5000)
+  gg.refineNumber('0')
+  gg.sleep(100)
+  gg.refineNumber('0')
+  gg.setVisible(false)
+  gg.toast('#FFFFFF 3/4')
+  gg.sleep(5000)
+  gg.refineNumber('1')
+  gg.sleep(100)
+  gg.refineNumber('1')
+  gg.setVisible(false)
+  gg.toast('#000000 4/4')
+  gg.sleep(5000)
+  gg.refineNumber('0')
+  gg.sleep(100)
+  gg.refineNumber('0')
+  gg.setVisible(false)
+  gg.sleep(100)
+  gg.getResults(100)
+  gg.setVisible(false)
+  CR = gg.prompt({''},{[1]='-8'},{[1]='text'})
+  gg.editAll(CR[1],gg.TYPE_FLOAT)
+  gg.sleep(100)
+  gg.setVisible(false)
+  print(os.date("%H:%M:%S Setting Chrome Value : "))
+  print(CR[1])
+  end
+  
 if menu==2 then
 gg.setVisible(false)
 gg.setRanges(gg.REGION_ANONYMOUS)
