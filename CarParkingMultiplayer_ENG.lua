@@ -309,7 +309,7 @@ function scr()
   end
   
   if menu==5 then
-    os.exit()
+    processKill()
   end
   
   gg.clearResults()
