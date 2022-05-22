@@ -2,6 +2,12 @@ gg.setVisible(false)
 gg.clearResults()
 gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
+if v.versionName=='4.8.6.9' then
+  print(os.date("%H:%M:%S Version 4.8.6.9"))
+else
+  gg.alert("Game Version May Not Be Supported")
+end
+
 function scr()
   print(os.date("%H:%M:%S Execute"))
   menu=gg.choice({
