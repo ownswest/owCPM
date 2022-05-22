@@ -4,7 +4,7 @@ gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠'
 
 v = gg.getTargetInfo()
 if v.versionCode ~= 4.8.8.8 then
- print('', v.versionCode, '')
+ gg.alert(v.versionCode)
  os.exit()
 end
 
