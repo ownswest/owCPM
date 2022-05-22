@@ -3,9 +3,8 @@ gg.clearResults()
 gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
 v = gg.getTargetInfo()
-if v.versionCode ~= 4888 then
- gg.alert(v.versionCode)
- os.exit()
+if v.versionCode ~= 200183 then
+ gg.alert(v.versionCode,'Version Is Dangerous')
 end
 
 function scr()
