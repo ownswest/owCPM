@@ -9,7 +9,7 @@ else
   gg.alert("Game Version May Not Be Supported")
 end
 
-function scr()
+function run()
   print(os.date("%H:%M:%S Execute"))
   menu=gg.choice({
       
@@ -315,7 +315,7 @@ function scr()
     gg.editAll(num,gg.TYPE_DWORD)
   end
   
-  if menu==5 then
+  if menu==6 then
     processKill()
   end
   
@@ -326,6 +326,6 @@ end
 while true do
   if gg.isVisible() then
     gg.setVisible(false)
-    scr()
+    run()
   end
 end
