@@ -202,120 +202,118 @@ function scr()
         snm = 341
       end
       
-    if cash==3 then --BUG
-    snm = 356
+      if cash==3 then --BUG
+        snm = 356
+      end
+      
+      if cash==4 then --M4
+        snm = 339
+      end
+      
+      if cash==5 then --M5
+        snm = 260
+      end
+      
+      if cash==6 then --X6
+        snm = 280
+      end
+      
+      if cash==7 then --M8
+        snm = 324
+      end
+      
+      if cash==8 then --I8
+        snm = 312
+      end
+      
+      if cash==9 then --S
+        snm = 310
+      end
+      
+      if cash==10 then --E
+        snm = 276
+      end
+      
+      if cash==11 then --GT63
+        snm = 322
+      end
+      
+      if cash==12 then --URUS
+        snm = 293
+      end
+      
+      if cash==13 then --VIPER
+        snm = 321
+      end
+      
+      if cash==14 then --R32
+        snm = 342
+      end
+      
+      if cash==15 then --180SX
+        snm = 305
+      end
+      
+      if cash==16 then --350Z
+        snm = 325
+      end
+      
+      if cash==17 then --CAMRY
+        snm = 288
+      end
+      
     end
-
-    if cash==4 then --M4
-    snm = 339
+    
+    if car==3 then
+      coin=gg.choice({
+          
+          'G.C³⁰⁰',
+          '720⁵⁰⁰'
+          
+        },nil,' 『coin』 ')
+      
+      if coin==1 then --G.C³⁰⁰
+        snm = 353
+      end
+      
+      if coin==2 then --720⁵⁰⁰
+        snm = 354
+      end
+      
     end
-
-    if cash==5 then --M5
-    snm = 260
+    
+    if car==4 then
+      unac=gg.choice({
+          
+          'H1',
+          'invisible'
+          
+        },nil,'')
+      
+      if unac==1 then --H1
+        snm = 281
+      end
+      
+      if unac==2 then --invisible
+        snm = 290
+      end
+      
     end
-
-    if cash==6 then --X6
-    snm = 280
-    end
-
-    if cash==7 then --M8
-    snm = 324
-    end
-
-    if cash==8 then --I8
-    snm = 312
-    end
-
-    if cash==9 then --S
-    snm = 310
-    end
-
-    if cash==10 then --E
-    snm = 276
-    end
-
-    if cash==11 then --GT63
-    snm = 322
-    end
-
-    if cash==12 then --URUS
-    snm = 293
-    end
-
-    if cash==13 then --VIPER
-    snm = 321
-    end
-
-    if cash==14 then --R32
-    snm = 342
-    end
-
-    if cash==15 then --180SX
-    snm = 305
-    end
-
-    if cash==16 then --350Z
-    snm = 325
-    end
-
-    if cash==17 then --CAMRY
-    snm = 288
-    end
-
+    
+    gg.editAll(snm,gg.TYPE_DWORD)
+    gg.toast('Purchase 18 vehicles in 10 seconds and get the original vehicle')
+    gg.setVisible(false)
+    gg.sleep(10000)
+    gg.setVisible(false)
+    gg.editAll(num,gg.TYPE_DWORD)
   end
-
-
-  if car==3 then
-  coin=gg.choice({
-
-'G.C³⁰⁰',
-'720⁵⁰⁰'
-
-  },nil,' 『coin』 ')
-
-    if coin==1 then --G.C³⁰⁰
-    snm = 353
-    end
-
-    if coin==2 then --720⁵⁰⁰
-    snm = 354
-    end
-
-  end
-
-if car==4 then
-  unac=gg.choice({
-
-'H1',
-'invisible'
-
-  },nil,'')
-
-    if unac==1 then --H1
-    snm = 281
-    end
-
-    if unac==2 then --invisible
-    snm = 290
-    end
-
-  end
-
-gg.editAll(snm,gg.TYPE_DWORD)
-gg.toast('Purchase 18 vehicles in 10 seconds and get the original vehicle')
-gg.setVisible(false)
-gg.sleep(10000)
-gg.setVisible(false)
-gg.editAll(num,gg.TYPE_DWORD)
-end
   
-if menu==5 then
-    os.exit
-end
-
-gg.clearResults()
-gg.toast("ヾ(≧▽≦*)o")
-
+  if menu==5 then
+    os.exit()
+  end
+  
+  gg.clearResults()
+  gg.toast("ヾ(≧▽≦*)o")
 end
 
 while true do
