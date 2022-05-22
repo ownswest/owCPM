@@ -319,14 +319,6 @@ end
 while true do
   if gg.isVisible() then
     gg.setVisible(false)
-    package=gg.getTargetPackage()
-    if package=='com.olzhas.carparking.multyplayer' then
-      print(os.date("%H:%M:%S Package Found"))
-    else
-      print(os.date("%H:%M:%S Package Error"))
-      gg.setVisible(true)
-      os.exit()
-    end
     scr()
   end
 end
