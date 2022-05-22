@@ -2,8 +2,13 @@ gg.setVisible(false)
 gg.clearResults()
 gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
-function scr()
+v = gg.getTargetInfo()
+if v.versionCode ~= 4.8.8.8 then
+ print(os.date("%H:%M:%S Version Error"), v.versionCode, '')
+ os.exit()
+end
 
+function scr()
 print(os.date("%H:%M:%S Execute"))
 menu=gg.choice({
 
@@ -316,7 +321,15 @@ end
 
 while true do
   if gg.isVisible() then
-  gg.setVisible(false)
-  scr()
+    gg.setVisible(false)
+    package=gg.getTargetPackage()
+    if package=='com.olzhas.carparking.multyplayer' then
+      print(os.date("%H:%M:%S Package Found"))
+    else
+      print(os.date("%H:%M:%S Package Error"))
+      gg.setVisible(true)
+      os.exit()
+    end
+    scr()
   end
 end
