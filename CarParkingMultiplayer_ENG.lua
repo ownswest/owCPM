@@ -1,6 +1,6 @@
 gg.setVisible(false)
 gg.clearResults()
-gg.alert(os.date("Updated 2022.05.22.10.47.50 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
+gg.alert(os.date("Updated 2022.05.22.21.25.24 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
 now = 0
 
