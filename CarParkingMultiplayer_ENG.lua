@@ -11,7 +11,7 @@ function scr()
       '   😁long name😁',
       '⚠🌟body kit🌟',
       '   🚗get vehicle🚗',
-      '                   EXIT'
+      '                                                     EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
