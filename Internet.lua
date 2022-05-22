@@ -1,1 +1,1 @@
-gg.toast(os.date("%H:%M:%S Internet Connected"))
+print(os.date("%H:%M:%S Internet Connected"))
