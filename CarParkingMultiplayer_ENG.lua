@@ -98,6 +98,8 @@ function run()
   end
   
   if menu==3 then
+    now = os.date("%H:%M:%S ")
+    print(now.."Long Name Selected")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("1")
