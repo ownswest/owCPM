@@ -1,6 +1,6 @@
 gg.setVisible(false)
 gg.clearResults()
-gg.alert(os.date("Updated 2022.05.25.11.57.23 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
+gg.alert(os.date("Updated 2022.05.25.22.13.36 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
 now = 0
 
@@ -72,6 +72,7 @@ function run()
     gg.setVisible(false)
     now = os.date("%H:%M:%S ")
     print(now.."Value : "..CR[1])
+    return
   end
   
   if menu==2 then
@@ -347,6 +348,7 @@ function run()
   end
   
   if menu==6 then
+    gg.setVisible(true)
     os.exit()
   end
   
