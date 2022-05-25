@@ -66,13 +66,12 @@ function run()
     gg.sleep(100)
     gg.getResults(100)
     gg.setVisible(false)
-    CR = gg.prompt({''},{[1]='-8'},{[1]='text'})
+    CR = gg.prompt({''},{[1]='-8'},{[1]='number'})
     gg.editAll(CR[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
     now = os.date("%H:%M:%S ")
     print(now.."Value : "..CR[1])
-    return
   end
   
   if menu==2 then
@@ -96,7 +95,7 @@ function run()
     gg.sleep(100)
     gg.getResults(100)
     gg.setVisible(false)
-    SS = gg.prompt({''},{[1]='-147'},{[1]='text'})
+    SS = gg.prompt({''},{[1]='-147'},{[1]='number'})
     gg.editAll(SS[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
@@ -121,7 +120,7 @@ function run()
     gg.getResults(100)
     gg.editAll("250", gg.TYPE_DWORD)
     now = os.date("%H:%M:%S ")
-    print(now.."Long name Is Possible.")
+    print(now.."Long name Is Possible")
   end
   
   if menu==4 then
@@ -176,7 +175,7 @@ function run()
     gg.toast(0)
     gg.sleep(1000)
     gg.setVisible(false)
-    BD = gg.prompt({''},{[1]='6'},{[1]='text'})
+    BD = gg.prompt({''},{[1]='6'},{[1]='number'})
     gg.editAll(BD[1],gg.TYPE_DWORD)
     gg.alert("press ✅")
     now = os.date("%H:%M:%S ")
@@ -202,7 +201,7 @@ function run()
 },nil,' 『get vehicle』 ')
     
     if car==1 then
-      BC = gg.prompt({'type value'},{[1]='357'},{[1]='text'})
+      BC = gg.prompt({'type value'},{[1]='357'},{[1]='number'})
       snm = BC[1]
     end
     
