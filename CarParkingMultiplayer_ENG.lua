@@ -1,17 +1,24 @@
 gg.setVisible(false)
 gg.clearResults()
-gg.alert(os.date("Updated 2022.05.22.21.38.48 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
+gg.alert(os.date("Updated 2022.05.25.11.57.23 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!"))
 
 now = 0
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
+  now = os.date("%H:%M:%S ")
+  print(now..v.versionName)
 else
-  gg.alert("Game Version May Not Be Supported")
+  ver = gg.alert(v.versionName.." Can Be Detected.\nStill Want To Continue?","Continue","Exit")
+  if ver==1 then
+    gg.toast("Be Careful")
+  end
+  if ver==2 then
+    now = os.date("%H:%M:%S ")
+    print(now..v.versionName.." Exit")
+    os.exit()
+  end
 end
-
-now = os.date("%H:%M:%S ")
-print(now..v.versionName)
 
 function run()
   now = os.date("%H:%M:%S ")
