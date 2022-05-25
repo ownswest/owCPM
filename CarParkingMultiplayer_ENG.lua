@@ -1,7 +1,13 @@
 gg.setVisible(false)
 gg.clearResults()
-gg.toast("Updated 2022.05.25.22.19.01 (GMT+9)")
-gg.alert("Script Ver. 0.1.1\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start")
+gg.toast("Updated 2022.05.25.22.24.08 (GMT+9)")
+sta = gg.alert("Script Ver. 0.1.2\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+if sta==1 then
+  gg.setVisible(true)
+end
+if sta==2 then
+  gg.toast("Press The Icon To Launch")
+  
 
 now = 0
 
