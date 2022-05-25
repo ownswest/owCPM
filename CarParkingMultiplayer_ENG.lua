@@ -7,7 +7,7 @@ if sta==1 then
 end
 if sta==2 then
   gg.toast("Press The Icon To Launch")
-  
+end
 
 now = 0
 
