@@ -1,11 +1,12 @@
 function nowPr(msg)
-  --now = os.date()
+  now = os.date("%H:%M:%S ")
+  print(now..msg)
 end
 
 gg.setVisible(false)
 gg.clearResults()
-gg.toast("Updated 2022.05.25.22.24.08 (GMT+9)")
-sta = gg.alert("Script Ver. 0.1.2\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+gg.toast("Updated 2022.05.26.15.28.40 (GMT+9)")
+sta = gg.alert("Script Ver. 0.1.3\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
