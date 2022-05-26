@@ -14,7 +14,8 @@ end
 
 clrRs()
 gg.setVisible(false)
-gg.toast("Updated 2022.05.26.15.28.40 (GMT+9)")
+gg.toast("Updated 2022.05.26.17.08.01 (GMT+9)")
+SV = "0.1.4"
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
@@ -24,11 +25,12 @@ else
   if ver==1 then
   elseif ver==2 then
     nowPr("Version Exit")
+    gg.setVisible(true)
     os.exit()
   end
 end
 
-sta = gg.alert("0.1.3\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert(SV.."\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -85,13 +87,11 @@ function run()
     gg.editAll(CR[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
-    now = os.date("%H:%M:%S ")
-    print(now.."Value : "..CR[1])
+    nowPr("Value : "..CR[1])
   end
   
   if menu==2 then
-    now = os.date("%H:%M:%S ")
-    print(now.."Scanning Incline Values")
+    nowPr("Scanning Incline Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("INCLINE")
@@ -114,14 +114,11 @@ function run()
     gg.editAll(SS[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
-    gg.alert('press done two times')
-    now = os.date("%H:%M:%S ")
-    print(now.."Value : "..SS[1])
+    nowPr("Value : "..SS[1])
   end
   
   if menu==3 then
-    now = os.date("%H:%M:%S ")
-    print(now.."Long Name Selected")
+    nowPr("Long Name Selected")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("1")
@@ -134,29 +131,27 @@ function run()
     gg.refineNumber("12", gg.TYPE_DWORD)
     gg.getResults(100)
     gg.editAll("250", gg.TYPE_DWORD)
-    now = os.date("%H:%M:%S ")
-    print(now.."Long name Is Possible")
+    nowPr("Long Name Is Possible")
   end
   
   if menu==4 then
-    now = os.date("%H:%M:%S ")
-    print(now.."Scanning Bodykit Values")
+    nowPr("Scanning Bodykit Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.alert("#2 bumper")
+    gg.alert("#2 Bumper")
     gg.sleep(5000)
     gg.searchNumber("1",gg.TYPE_DWORD)
     gg.setVisible(false)
-    gg.toast("#3 bumper")
+    gg.toast("#3 Bumper")
     gg.sleep(5000)
     gg.refineNumber("2",gg.TYPE_DWORD)
     gg.setVisible(false)
-    gg.toast("#4 bumper")
+    gg.toast("#4 Bumper")
     gg.sleep(5000)
     gg.refineNumber("3",gg.TYPE_DWORD)
     gg.setVisible(false)
     gg.getResults(100)
-    gg.alert("Select the air intake for the applied vehicle within 15 seconds")
+    gg.alert("Select The Air Intake For The Applied Vehicle Within 15 Seconds")
     gg.toast(15)
     gg.sleep(1000)
     gg.toast(14)
@@ -192,14 +187,12 @@ function run()
     gg.setVisible(false)
     BD = gg.prompt({''},{[1]='6'},{[1]='number'})
     gg.editAll(BD[1],gg.TYPE_DWORD)
-    gg.alert("press ✅")
-    now = os.date("%H:%M:%S ")
-    print(now.."Value : "..BD[1])
+    gg.alert("Press ✅")
+    nowPr("Value : "..BD[1])
   end
   
   if menu==5 then
-    now = os.date("%H:%M:%S ")
-    print(now.."Ready To Get Vehicle")
+    nowPr("Scanning Incline Values")
     num = '85'
     gg.setVisible(false)
     gg.setRanges(gg.REGION_CODE_APP)
@@ -207,11 +200,10 @@ function run()
     gg.getResults(100)
     car=gg.choice({
         
-        '⚠🎱value🎱',
-        '   💰cash💰',
-        '   📀coin📀',
-        '⚠🙄unaccessible🙄',
-        ''
+        '⚠🎱Value🎱',
+        '   💰Cash💰',
+        '   📀Coin📀',
+        '⚠🙄Unaccessible🙄'
         
 },nil,' 『get vehicle』 ')
     
@@ -335,7 +327,7 @@ function run()
       unac=gg.choice({
           
           'H1',
-          'invisible'
+          'Invisible'
           
         },nil,'')
       
@@ -350,21 +342,22 @@ function run()
     end
     
     gg.editAll(snm,gg.TYPE_DWORD)
-    gg.toast('Purchase 18 vehicles in 10 seconds and get the original vehicle')
+    gg.toast('Purchase 18 Vehicles In 10 Seconds And Get The Original Vehicle')
     gg.setVisible(false)
-    now = os.date("%H:%M:%S ")
-    print(now.."Value : "..snm)
+    nowPr("Ready To Get Vehicle")
     gg.sleep(10000)
     gg.setVisible(false)
     gg.editAll(num,gg.TYPE_DWORD)
   end
   
   if menu==6 then
+    nowPr("Exit")
     gg.setVisible(true)
     os.exit()
   end
   
   clrRs()
+  nowPr("Run End")
   gg.toast("ヾ(≧▽≦*)o")
 end
 
