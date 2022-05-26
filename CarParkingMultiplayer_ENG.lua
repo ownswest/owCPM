@@ -3,10 +3,28 @@ function nowPr(msg)
   print(now..msg)
 end
 
+function clrRs()
+  gg.clearResults()
+  nowPr("Result Cleared")
+end
+
+clrRs()
 gg.setVisible(false)
-gg.clearResults()
 gg.toast("Updated 2022.05.26.15.28.40 (GMT+9)")
-sta = gg.alert("Script Ver. 0.1.3\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+
+local v = gg.getTargetInfo()
+if v.versionName=='4.8.6.9' then
+  nowPr(v.versionName)
+else
+  ver = gg.alert(v.versionName.." Can Be Detected.\nStill Want To Continue?","Continue","Exit")
+  if ver==1 then
+  elseif ver==2 then
+    nowPr("Version Exit")
+    os.exit()
+  end
+end
+
+sta = gg.alert("0.1.3\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -14,25 +32,9 @@ if sta==2 then
   gg.toast("Press The Icon To Launch")
 end
 
-local v = gg.getTargetInfo()
-if v.versionName=='4.8.6.9' then
-  now = os.date("%H:%M:%S ")
-  print(now..v.versionName)
-else
-  ver = gg.alert(v.versionName.." Can Be Detected.\nStill Want To Continue?","Continue","Exit")
-  if ver==1 then
-    gg.toast("Be Careful")
-  end
-  if ver==2 then
-    now = os.date("%H:%M:%S ")
-    print(now..v.versionName.." Exit")
-    os.exit()
-  end
-end
-
 function run()
-  now = os.date("%H:%M:%S ")
-  print(now.."Run")
+  nowPr("Run")
+  clrRs()
   menu=gg.choice({
       
       '⚠☀chrome☀',
@@ -45,8 +47,7 @@ function run()
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
   if menu==1 then
-    now = os.date("%H:%M:%S ")
-    print(now.."Scanning Chrome Values")
+    nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert('SPECULAR')
@@ -352,8 +353,6 @@ function run()
     gg.sleep(10000)
     gg.setVisible(false)
     gg.editAll(num,gg.TYPE_DWORD)
-    now = os.date("%H:%M:%S ")
-    print(now.."Value : "..num)
   end
   
   if menu==6 then
@@ -361,7 +360,7 @@ function run()
     os.exit()
   end
   
-  gg.clearResults()
+  clrRs()
   gg.toast("ヾ(≧▽≦*)o")
 end
 
