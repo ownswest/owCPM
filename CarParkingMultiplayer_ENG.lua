@@ -1,3 +1,7 @@
+function nowPr()
+  --
+end
+
 gg.setVisible(false)
 gg.clearResults()
 gg.toast("Updated 2022.05.25.22.24.08 (GMT+9)")
@@ -8,8 +12,6 @@ end
 if sta==2 then
   gg.toast("Press The Icon To Launch")
 end
-
-now = 0
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
