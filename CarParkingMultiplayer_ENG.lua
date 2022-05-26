@@ -1,5 +1,5 @@
-function nowPr()
-  --
+function nowPr(msg)
+  --now = os.date()
 end
 
 gg.setVisible(false)
