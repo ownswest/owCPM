@@ -15,7 +15,7 @@ end
 clrRs()
 gg.setVisible(false)
 
-sta = gg.alert("All features offered in the beta can be ben-processed for multiple reasons, so you should refrain from using it as much as possible.\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("All features offered in the beta can be ben-processed for multiple reasons, so you should refrain from using it as much as possible.\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -39,7 +39,7 @@ function run()
     gg.setRanges(gg.REGION_CODE_APP)
     gg.searchNumber('500',gg.TYPE_FLOAT)
     gg.getResults(100)
-    gg.editAll('777',gg.TYPE_FLOAT)
+    gg.editAll('-777',gg.TYPE_FLOAT)
     gg.setVisible(false)
     nowPr("")
   end
