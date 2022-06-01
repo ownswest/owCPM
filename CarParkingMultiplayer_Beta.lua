@@ -24,5 +24,34 @@ if sta==2 then
 end
 
 function run()
+  nowPr("Run")
+  clrRs()
+  menu=gg.choice({
+      
+      '1',
+      'EXIT'
+      
+    },nil,'@ownswest ( •̀ ω •́ ) ')
   
+  if menu==1 then
+    nowPr("")
+  end
+  
+  if menu==2 then
+    nowPr("Exit")
+    gg.setVisible(true)
+    os.exit()
+  end
+  
+  clrRs()
+  nowPr("Run End")
+  gg.toast("ヾ(≧▽≦*)o")
+end
+
+while true do
+  if gg.isVisible() then
+    gg.setVisible(false)
+    run()
+  end
+  gg.sleep(100)
 end
