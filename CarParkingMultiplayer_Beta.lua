@@ -15,7 +15,7 @@ end
 clrRs()
 gg.setVisible(false)
 
-sta = gg.alert("All features offered in the beta can be ben-processed for multiple reasons, so you should refrain from using it as much as possible.\This script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("All features offered in the beta can be ben-processed for multiple reasons, so you should refrain from using it as much as possible.\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
