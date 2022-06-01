@@ -28,12 +28,19 @@ function run()
   clrRs()
   menu=gg.choice({
       
-      '1',
+      'Look Around The World',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
   if menu==1 then
+    nowPr("")
+    gg.setVisible(false)
+    gg.setRanges(gg.REGION_CODE_APP)
+    gg.searchNumber('500',gg.TYPE_FLOAT)
+    gg.getResults(100)
+    gg.editAll('777',gg.TYPE_FLOAT)
+    gg.setVisible(false)
     nowPr("")
   end
   
