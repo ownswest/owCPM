@@ -44,7 +44,7 @@ function run()
   menu=gg.choice({
       
       '⚠☀chrome☀',
-      '❌🚀ufo🚀',
+      '   🚀ufo🚀',
       '   😁long name😁',
       '⚠🌟body kit🌟',
       '   🚗get vehicle🚗',
