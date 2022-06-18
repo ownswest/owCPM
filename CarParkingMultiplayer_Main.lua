@@ -14,8 +14,8 @@ end
 
 clrRs()
 gg.setVisible(false)
-gg.toast("Updated 2022.05.26.17.08.01 (GMT+9)")
-SV = "0.1.4"
+gg.toast("Updated 2022.06.18.18.14.10 (GMT+9)")
+SV = "0.1.5"
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
