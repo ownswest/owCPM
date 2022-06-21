@@ -47,7 +47,7 @@ function run()
       '   🚀ufo🚀',
       '   😁long name😁',
       '⚠🌟body kit🌟',
-      '   🚗get vehicle🚗',
+      '⚠🚗get vehicle🚗',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
@@ -98,15 +98,23 @@ function run()
     gg.toast("FULL 1/4")
     gg.sleep(5000)
     gg.searchNumber('-15', gg.TYPE_FLOAT)
+    gg.sleep(100)
+    gg.refineNumber('-15')
     gg.toast("RESET 2/4")
     gg.sleep(5000)
+    gg.refineNumber('0')
+    gg.sleep(100)
     gg.refineNumber('0')
     gg.toast("FULL 3/4")
     gg.sleep(5000)
     gg.refineNumber('-15')
+    gg.sleep(100)
+    gg.refineNumber('-15')
     gg.toast("RESET 4/4")
     gg.sleep(5000)
     gg.refineNumber('0')
+    gg.sleep(100)
+    gg.refineNumber('-15')
     gg.sleep(100)
     gg.getResults(100)
     gg.setVisible(false)
