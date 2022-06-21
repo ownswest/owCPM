@@ -14,8 +14,8 @@ end
 
 clrRs()
 gg.setVisible(false)
-gg.toast("Updated 2022.06.18.18.14.10 (GMT+9)")
-SV = "0.1.5"
+gg.toast("Updated 2022.06.21.12.02.54 (GMT+9)")
+SV = "0.1.6"
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
@@ -47,7 +47,7 @@ function run()
       '   🚀ufo🚀',
       '   😁long name😁',
       '⚠🌟body kit🌟',
-      '⚠🚗get vehicle🚗',
+      '   🚗get vehicle🚗',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
@@ -135,10 +135,12 @@ function run()
     gg.alert("123")
     gg.sleep(8000)
     gg.refineNumber("12;3", gg.TYPE_DWORD)
+    gg.sleep(100)
+    gg.refineNumber("12;3", gg.TYPE_DWORD)
     gg.sleep(2000)
     gg.refineNumber("12", gg.TYPE_DWORD)
     gg.getResults(100)
-    gg.editAll("250", gg.TYPE_DWORD)
+    gg.editAll("500", gg.TYPE_DWORD)
     nowPr("Long Name Is Possible")
   end
   
@@ -373,6 +375,7 @@ while true do
   if gg.isVisible() then
     gg.setVisible(false)
     run()
+    gg.sleep(100)
   end
   gg.sleep(100)
 end
