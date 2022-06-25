@@ -14,8 +14,6 @@ end
 
 clrRs()
 gg.setVisible(false)
-gg.toast("Updated 2022.06.21.12.02.54 (GMT+9)")
-SV = "0.1.6"
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
@@ -30,7 +28,7 @@ else
   end
 end
 
-sta = gg.alert(SV.."\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.1.7\nLast Updated 2022.06.25.12.34.30 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -56,7 +54,7 @@ function run()
     nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.alert('SPECULAR')
+    gg.alert('You want the original server?\nOnly do this!\n\nCAR : SPECULAR\nWHEEl : MAIN, SPECULAR, REFLECTION')
     gg.setVisible(false)
     gg.toast('#FFFFFF 1/4')
     gg.sleep(5000)
