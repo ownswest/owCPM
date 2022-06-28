@@ -17,7 +17,7 @@ gg.setVisible(false)
 
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
-  nowPr(v.versionName)
+  nowPr("Version "..v.versionName.." Is Available")
 else
   ver = gg.alert(v.versionName.." Can Be Detected.\nStill Want To Continue?","Continue","Exit")
   if ver==1 then
@@ -56,12 +56,12 @@ function run()
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("If you want to increase the success rate?\nDo not close the 'ENTER YOUR NAME:' settings window!")
-    gg.alert("Set the name to 'owns' in 10 seconds")
+    gg.alert("Set The Name To 'owns' In 10 Seconds")
     gg.sleep(10000)
     gg.searchNumber("12;4", gg.TYPE_DWORD)
     gg.sleep(100)
     gg.refineNumber("12;4", gg.TYPE_DWORD)
-    gg.alert("Set the name to 'ownswest' in 10 seconds")
+    gg.alert("Set The Name To 'ownswest' In 10 Seconds")
     gg.sleep(10000)
     gg.refineNumber("12;8", gg.TYPE_DWORD)
     gg.sleep(100)
@@ -89,10 +89,10 @@ function run()
         '   📀Coin📀',
         '⚠🙄Unaccessible🙄'
         
-},nil,' 『get vehicle』 ')
+},nil,' 『Get vehicle』 ')
     
     if car==1 then
-      BC = gg.prompt({'type value'},{[1]='357'},{[1]='number'})
+      BC = gg.prompt({'Type Value'},{[1]='357'},{[1]='number'})
       snm = BC[1]
     end
     
@@ -117,7 +117,7 @@ function run()
           '350Z',
           'CAMRY'
           
-        },nil,' 『cash』 ')
+        },nil,' 『Cash』 ')
       
       if cash==1 then --F1 ¹⁸⁰⁰⁰
         snm = 357
@@ -195,7 +195,7 @@ function run()
           'G.C³⁰⁰',
           '720⁵⁰⁰'
           
-        },nil,' 『coin』 ')
+        },nil,' 『Coin』 ')
       
       if coin==1 then --G.C³⁰⁰
         snm = 353
@@ -226,7 +226,7 @@ function run()
     end
     
     gg.editAll(snm,gg.TYPE_DWORD)
-    gg.toast('Purchase 18 Vehicles In 10 Seconds And Get The Original Vehicle')
+    gg.toast('Purchase #18 Vehicles In 10 Seconds And Get The Original Vehicle')
     gg.setVisible(false)
     nowPr("Ready To Get Vehicle")
     gg.sleep(10000)
@@ -335,10 +335,10 @@ function run()
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("If you set this up, other players may not be able to drive your car!")
-    gg.toast("INCLINE FULL 1/2")
+    gg.toast("Set INCLINE To A Maximum, 1/2")
     gg.sleep(5000)
     gg.searchNumber('-15', gg.TYPE_FLOAT)
-    gg.toast("INCLINE RESET 2/2")
+    gg.toast("Set INCLINE To A Minimum 2/2")
     gg.sleep(5000)
     gg.refineNumber('0')
     gg.sleep(100)
