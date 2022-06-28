@@ -28,7 +28,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.0\nLast Updated 2022.06.28.19.25.16 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.1\nLast Updated 2022.06.28.20.00.46 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -41,11 +41,11 @@ function run()
   clrRs()
   menu=gg.choice({
       
-      '   😁long name😁',
-      '   🚗get vehicle🚗',
-      '   ☀chrome☀',
-      '   🌟body kit🌟',
-      '   🚀ufo🚀',
+      '   😁Long name😁',
+      '   🚗Get vehicle🚗',
+      '   ☀Chrome☀',
+      '   🌟Body kit🌟',
+      '   🚀Ufo🚀',
       '⚠⚙Handle angle⚙',
       'EXIT'
       
@@ -351,9 +351,24 @@ function run()
   end
   
   if menu==6 then
-    nowPr("Unprepared Function")
-    gg.setVisible(true)
-    os.exit()
+    nowPr("Scanning Handle Angle Values")
+    gg.setVisible(false)
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.toast("Set The Angle To 30 1/2")
+    gg.sleep(5000)
+    gg.searchNumber('30', gg.TYPE_FLOAT)
+    gg.toast("Set The Angle To 60 2/2")
+    gg.sleep(5000)
+    gg.refineNumber('60')
+    gg.sleep(100)
+    gg.refineNumber('0')
+    gg.getResults(3)
+    gg.setVisible(false)
+    SS = gg.prompt({''},{[1]='90'},{[1]='number'})
+    gg.editAll(SS[1],gg.TYPE_FLOAT)
+    gg.sleep(100)
+    gg.setVisible(false)
+    nowPr("Value : "..SS[1])
   end
   
   if menu==7 then
