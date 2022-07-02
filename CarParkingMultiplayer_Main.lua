@@ -102,6 +102,7 @@ function run()
           'F1 ¹⁸⁰⁰⁰',
           'F1 ¹²⁰⁰⁰',
           'BUG',
+          'M2',
           'M4',
           'M5',
           'X6',
@@ -131,59 +132,63 @@ function run()
         snm = 356
       end
       
-      if cash==4 then --M4
+      if cash==4 then --M2
+        snm = 295
+      end
+      
+      if cash==5 then --M4
         snm = 339
       end
       
-      if cash==5 then --M5
+      if cash==6 then --M5
         snm = 260
       end
       
-      if cash==6 then --X6
+      if cash==7 then --X6
         snm = 280
       end
       
-      if cash==7 then --M8
+      if cash==8 then --M8
         snm = 324
       end
       
-      if cash==8 then --I8
+      if cash==9 then --I8
         snm = 312
       end
       
-      if cash==9 then --S
+      if cash==10 then --S
         snm = 310
       end
       
-      if cash==10 then --E
+      if cash==11 then --E
         snm = 276
       end
       
-      if cash==11 then --GT63
+      if cash==12 then --GT63
         snm = 322
       end
       
-      if cash==12 then --URUS
+      if cash==13 then --URUS
         snm = 293
       end
       
-      if cash==13 then --VIPER
+      if cash==14 then --VIPER
         snm = 321
       end
       
-      if cash==14 then --R32
+      if cash==15 then --R32
         snm = 342
       end
       
-      if cash==15 then --180SX
+      if cash==16 then --180SX
         snm = 305
       end
       
-      if cash==16 then --350Z
+      if cash==17 then --350Z
         snm = 325
       end
       
-      if cash==17 then --CAMRY
+      if cash==18 then --CAMRY
         snm = 288
       end
       
