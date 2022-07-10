@@ -15,6 +15,8 @@ end
 clrRs()
 gg.setVisible(false)
 
+nowPr(gg.getFile())
+
 gb = gg.BUILD
 if gb=='16142' then
   nowPr("GG Build "..gb)
@@ -38,7 +40,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.3\nLast Updated 2022.07.10.20.58.48 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.3\nLast Updated 2022.07.10.21.17.25 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
