@@ -15,6 +15,16 @@ end
 clrRs()
 gg.setVisible(false)
 
+gb = gg.BUILD
+if gb=='16142' then
+  nowPr("GG Build "..gb)
+else
+  gg.alert("Do you use the official GG app?\nThis script is available on the official GG app!")
+  nowPr("GG Build Exit")
+  gg.setVisible(true)
+  os.exit()
+end
+
 local v = gg.getTargetInfo()
 if v.versionName=='4.8.6.9' then
   nowPr("Version "..v.versionName.." Is Available")
@@ -28,7 +38,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.2\nLast Updated 2022.07.02.11.48.56 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.3\nLast Updated 2022.07.10.20.58.48 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
