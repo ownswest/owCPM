@@ -15,7 +15,7 @@ end
 clrRs()
 gg.setVisible(false)
 
-nowPr(gg.getFile())
+nowPr(gg.getFile)
 
 gb = gg.BUILD
 if gb=='16142' then
