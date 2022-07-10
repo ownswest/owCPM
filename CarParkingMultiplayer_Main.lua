@@ -15,8 +15,6 @@ end
 clrRs()
 gg.setVisible(false)
 
-nowPr(gg.getFile)
-
 gb = gg.BUILD
 if gb=='16142' then
   nowPr("GG Build "..gb)
