@@ -241,17 +241,12 @@ function run()
     if car==4 then
       unac=gg.choice({
           
-          'H1',
-          'Invisible'
+          'H1'
           
         },nil,'')
       
       if unac==1 then --H1
         snm = 281
-      end
-      
-      if unac==2 then --invisible
-        snm = 290
       end
       
     end
