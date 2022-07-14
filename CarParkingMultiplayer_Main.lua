@@ -26,7 +26,8 @@ else
 end
 
 local v = gg.getTargetInfo()
-if v.versionName=='4.8.6.9' then
+local vv = '4.8.8.1'
+if v.versionName==vv then
   nowPr("Version "..v.versionName.." Is Available")
 else
   ver = gg.alert(v.versionName.." Can Be Detected.\nStill Want To Continue?","Continue","Exit")
@@ -38,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.3\nLast Updated 2022.07.10.21.17.25 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.4\nLast Updated 2022.07.14.17.10.57 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -208,7 +209,10 @@ function run()
       coin=gg.choice({
           
           'G.C³⁰⁰',
-          '720⁵⁰⁰'
+          '720⁵⁰⁰',
+          'C8⁵⁰⁰',
+          'BENTLEY⁵⁰⁰',
+          'TRUCK¹⁰⁰⁰'
           
         },nil,' 『Coin』 ')
       
@@ -218,6 +222,18 @@ function run()
       
       if coin==2 then --720⁵⁰⁰
         snm = 354
+      end
+      
+      if coin==3 then --C8⁵⁰⁰
+        snm = 358
+      end
+      
+      if coin==4 then --BENTLEY⁵⁰⁰
+        snm = 361
+      end
+      
+      if coin==5 then --TRUCK¹⁰⁰⁰
+        snm = 368
       end
       
     end
