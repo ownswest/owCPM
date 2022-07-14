@@ -57,7 +57,7 @@ function run()
       '   ☀Chrome☀',
       '   🌟Body kit🌟',
       '   🚀Ufo🚀',
-      '⚠⚙Handle angle⚙',
+      '   ⚙Handle angle⚙',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
