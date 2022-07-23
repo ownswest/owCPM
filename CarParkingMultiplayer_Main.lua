@@ -26,7 +26,7 @@ else
 end
 
 local v = gg.getTargetInfo()
-local vv = '4.8.8.1'
+local vv = '4.8.8.3'
 if v.versionName==vv then
   nowPr("Version "..v.versionName.." Is Available")
 else
@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.4\nLast Updated 2022.07.14.17.10.57 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.5\nLast Updated 2022.07.23.21.04.11 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -252,7 +252,7 @@ function run()
     end
     
     gg.editAll(snm,gg.TYPE_DWORD)
-    gg.toast('Purchase #18 Vehicles In 10 Seconds And Get The Original Vehicle')
+    gg.toast('Purchase #18 Vehicles In 10 Seconds And Restart The Game')
     gg.setVisible(false)
     nowPr("Ready To Get Vehicle")
     gg.sleep(10000)
@@ -361,17 +361,27 @@ function run()
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
     gg.alert("If you set this up, other players may not be able to drive your car!")
-    gg.toast("Set INCLINE To A Maximum, 1/2")
+    gg.toast("Set INCLINE To A Maximum, 1/4")
     gg.sleep(5000)
-    gg.searchNumber('-15', gg.TYPE_FLOAT)
-    gg.toast("Set INCLINE To A Minimum 2/2")
+    gg.searchNumber('-10', gg.TYPE_FLOAT)
+    gg.toast("Set INCLINE To A Minimum 2/4')
+    gg.sleep(5000)
+    gg.refineNumber('0')
+    gg.sleep(100)
+    gg.refineNumber('0')
+    gg.toast("Set INCLINE To A Maximum 3/4')
+    gg.sleep(5000)
+    gg.refineNumber('-10')
+    gg.sleep(100)
+    gg.refineNumber('-10')
+    gg.toast("Set INCLINE To A Minimum 4/4')
     gg.sleep(5000)
     gg.refineNumber('0')
     gg.sleep(100)
     gg.refineNumber('0')
     gg.getResults(4)
     gg.setVisible(false)
-    SS = gg.prompt({''},{[1]='-91'},{[1]='number'})
+    SS = gg.prompt({''},{[1]='-89.9'},{[1]='number'})
     gg.editAll(SS[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
