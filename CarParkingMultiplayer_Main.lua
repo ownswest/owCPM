@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.5\nLast Updated 2022.07.23.21.04.11 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.6\nLast Updated 2022.07.29.12.09.02 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -314,6 +314,10 @@ function run()
     gg.toast("#4 Bumper")
     gg.sleep(5000)
     gg.refineNumber("3",gg.TYPE_DWORD)
+    gg.setVisible(false)
+    gg.toast("Press 'X'")
+    gg.sleep(5000)
+    gg.refineNumber("4294967295",gg.TYPE_DWORD)
     gg.setVisible(false)
     gg.getResults(100)
     gg.alert("Select The Air Intake For The Applied Vehicle Within 15 Seconds")
