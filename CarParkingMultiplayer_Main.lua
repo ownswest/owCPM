@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.6\nLast Updated 2022.07.29.12.09.02 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.7\nLast Updated 2022.08.01.16.37.55 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -52,6 +52,7 @@ function run()
   clrRs()
   menu=gg.choice({
       
+      '   ⛽Engine⛽(x64 only)',
       '   😁Long name😁',
       '   🚗Get vehicle🚗',
       '   ☀Chrome☀',
@@ -63,6 +64,88 @@ function run()
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
   if menu==1 then
+    nowPr("Scanning Engine Values")
+    egn=gg.choice({
+        
+        'Glitch',
+        'test'
+        
+},nil,' 『Engine』 ')
+    
+    if egn==1 then
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("190", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("1695.999", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("300", gg.TYPE_FLOAT)
+      gg.getResults(4)
+      gg.editAll("2254.999", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("5900", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("1000", gg.TYPE_FLOAT)
+      gg.clearResults(2)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("4100", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("1010", gg.TYPE_FLOAT)
+      gg.clearResults(3)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("0.1", gg.TYPE_FLOAT)
+      gg.getResults(47)
+      gg.sleep(30)
+      gg.editAll("0.0000001", gg.TYPE_FLOAT)
+      gg.clearResults(47)
+      gg.sleep(500)
+      gg.alert("L4 2.5")
+    end
+    
+    if egn==2 then      
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("190", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("99", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("300", gg.TYPE_FLOAT)
+      gg.getResults(4)
+      gg.editAll("2299", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("5900", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("8000", gg.TYPE_FLOAT)
+      gg.clearResults(2)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("4100", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("7900", gg.TYPE_FLOAT)
+      gg.clearResults(3)
+      gg.alert("L4 2.5")
+    end
+    
+  end
+  
+  if menu==2 then
     nowPr("Long Name Selected")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -86,7 +169,7 @@ function run()
     nowPr("Long Name Is Possible")
   end
   
-  if menu==2 then
+  if menu==3 then
     nowPr("Scanning Incline Values")
     num = '85'
     gg.setVisible(false)
@@ -260,7 +343,7 @@ function run()
     gg.editAll(num,gg.TYPE_DWORD)
   end
   
-  if menu==3 then
+  if menu==4 then
     nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -298,7 +381,7 @@ function run()
     nowPr("Value : "..CR[1])
   end
   
-  if menu==4 then
+  if menu==5 then
     nowPr("Scanning Bodykit Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -360,7 +443,7 @@ function run()
     nowPr("Value : "..BD[1])
   end
   
-  if menu==5 then
+  if menu==6 then
     nowPr("Scanning UFO(Incline) Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -392,7 +475,7 @@ function run()
     nowPr("Value : "..SS[1])
   end
   
-  if menu==6 then
+  if menu==7 then
     nowPr("Scanning Handle Angle Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -414,7 +497,7 @@ function run()
     nowPr("Value : "..SS[1])
   end
   
-  if menu==7 then
+  if menu==8 then
     nowPr("Exit")
     gg.setVisible(true)
     os.exit()
