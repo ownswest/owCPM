@@ -59,6 +59,7 @@ function run()
       '   🌟Body kit🌟',
       '   🚀Ufo🚀',
       '   ⚙Handle angle⚙',
+      'Kill Game',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
