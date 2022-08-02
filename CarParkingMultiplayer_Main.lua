@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.7\nLast Updated 2022.08.01.16.37.55 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.8\nLast Updated 2022.08.02.13.37.11 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -67,12 +67,53 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        'Glitch',
-        'test'
+        'W16(Apply 1695hp 2254nm To L4 2.5)',
+        'Glitch(Apply 1695.999hp 2254.999nm To L4 2.5)',
+        'Glitch(Apply 99hp 2299nm To L4 2.5)'
         
 },nil,' 『Engine』 ')
     
     if egn==1 then
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("190", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("1695.999", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("300", gg.TYPE_FLOAT)
+      gg.getResults(4)
+      gg.editAll("2254.999", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("5900", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("7000", gg.TYPE_FLOAT)
+      gg.clearResults(2)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("4100", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("3500", gg.TYPE_FLOAT)
+      gg.clearResults(3)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("0.1", gg.TYPE_FLOAT)
+      gg.getResults(47)
+      gg.sleep(30)
+      gg.editAll("0.0000001", gg.TYPE_FLOAT)
+      gg.clearResults(47)
+      gg.sleep(500)
+      gg.alert("L4 2.5")
+    end      
+    
+    if egn==2 then
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
@@ -112,7 +153,7 @@ function run()
       gg.alert("L4 2.5")
     end
     
-    if egn==2 then      
+    if egn==3 then      
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
@@ -140,6 +181,15 @@ function run()
       gg.getResults(1)
       gg.editAll("7900", gg.TYPE_FLOAT)
       gg.clearResults(3)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("0.1", gg.TYPE_FLOAT)
+      gg.getResults(47)
+      gg.sleep(30)
+      gg.editAll("0.0000001", gg.TYPE_FLOAT)
+      gg.clearResults(47)
+      gg.sleep(500)
       gg.alert("L4 2.5")
     end
     
