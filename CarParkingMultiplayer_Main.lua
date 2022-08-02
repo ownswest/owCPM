@@ -59,7 +59,7 @@ function run()
       '   🌟Body kit🌟',
       '   🚀Ufo🚀',
       '   ⚙Handle angle⚙',
-      'Kill Game(Beta)',
+      '   🎟Get money🎟',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
@@ -550,9 +550,13 @@ function run()
   end
   
   if menu==8 then
-    nowPr("Kill Game")
     gg.setVisible(false)
-    gg.processKill()
+    gg.setRanges(gg.REGION_CODE_APP)
+    gg.searchNumber("5000", gg.TYPE_FLOAT)
+    gg.getResults(100)
+    gg.editAll("1E37", gg.TYPE_FLOAT)
+    gg.clearResults(100)
+    gg.alert("Press Instagram")
   end
   
   if menu==9 then
