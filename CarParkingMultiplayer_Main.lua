@@ -549,6 +549,12 @@ function run()
   end
   
   if menu==8 then
+    nowPr("Kill Game")
+    gg.setVisible(false)
+    processKill()
+  end
+  
+  if menu==9 then
     nowPr("Exit")
     gg.setVisible(true)
     os.exit()
