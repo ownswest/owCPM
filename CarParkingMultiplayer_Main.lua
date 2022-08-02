@@ -59,7 +59,7 @@ function run()
       '   🌟Body kit🌟',
       '   🚀Ufo🚀',
       '   ⚙Handle angle⚙',
-      'Kill Game',
+      'Kill Game(Beta)',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
