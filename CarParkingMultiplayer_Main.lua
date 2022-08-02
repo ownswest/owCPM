@@ -72,6 +72,7 @@ function run()
         'Glitch(Apply 99hp 2299nm To L4 2.5)'
         
 },nil,' 『Engine』 ')
+    gg.alert("After applying this engine, you have to reboot the game!")
     
     if egn==1 then
       gg.setRanges(gg.REGION_CODE_APP)
