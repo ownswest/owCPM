@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.8\nLast Updated 2022.08.02.13.37.11 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.8\nLast Updated 2022.08.03.17.36.59 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -160,14 +160,14 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("99", gg.TYPE_FLOAT)
+      gg.editAll("99.999", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("2299", gg.TYPE_FLOAT)
+      gg.editAll("2299.999", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
