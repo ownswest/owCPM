@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.8\nLast Updated 2022.08.03.17.36.59 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.2.9\nLast Updated 2022.08.03.18.05.44 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -173,13 +173,15 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("0.1", gg.TYPE_FLOAT)
       gg.getResults(47)
-      gg.sleep(30)
       gg.editAll("0.0000000001", gg.TYPE_FLOAT)
-      gg.clearResults(47)
       gg.alert("Buy Gearbox")
+      gg.sleep(5000)
+      gg.setVisible(false)
+      gg.editAll("0.1", gg.TYPE_FLOAT)
+      gg.clearResults(47)
     end
     
-    gg.alert("After applying this engine, you have to reboot the game!")
+    gg.alert("If You Don't Restart The Game, There Can Be An Error!")
     
   end
   
