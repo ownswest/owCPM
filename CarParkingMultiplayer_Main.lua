@@ -70,10 +70,10 @@ function run()
         
         'W16(Apply 1695hp 2254nm To L4 2.5)',
         'Glitch(Apply 1695.999hp 2254.999nm To L4 2.5)',
-        'Glitch(Apply 99hp 2299nm To L4 2.5)'
+        'Glitch(Apply 99hp 2299nm To L4 2.5)',
+        'Fast Gearbox(0.0000000001S)'
         
 },nil,' 『Engine』 ')
-    gg.alert("After applying this engine, you have to reboot the game!")
     
     if egn==1 then
       gg.setRanges(gg.REGION_CODE_APP)
@@ -103,15 +103,6 @@ function run()
       gg.getResults(1)
       gg.editAll("3500", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.sleep(500)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.setVisible(false)
-      gg.searchNumber("0.1", gg.TYPE_FLOAT)
-      gg.getResults(47)
-      gg.sleep(30)
-      gg.editAll("0.0000001", gg.TYPE_FLOAT)
-      gg.clearResults(47)
-      gg.sleep(500)
       gg.alert("L4 2.5")
     end      
     
@@ -143,15 +134,6 @@ function run()
       gg.getResults(1)
       gg.editAll("1010", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.sleep(500)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.setVisible(false)
-      gg.searchNumber("0.1", gg.TYPE_FLOAT)
-      gg.getResults(47)
-      gg.sleep(30)
-      gg.editAll("0.0000001", gg.TYPE_FLOAT)
-      gg.clearResults(47)
-      gg.sleep(500)
       gg.alert("L4 2.5")
     end
     
@@ -183,17 +165,21 @@ function run()
       gg.getResults(1)
       gg.editAll("7900", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.sleep(500)
+      gg.alert("L4 2.5")
+    end
+    
+    if egn==4 then
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("0.1", gg.TYPE_FLOAT)
       gg.getResults(47)
       gg.sleep(30)
-      gg.editAll("0.0000001", gg.TYPE_FLOAT)
+      gg.editAll("0.0000000001", gg.TYPE_FLOAT)
       gg.clearResults(47)
-      gg.sleep(500)
-      gg.alert("L4 2.5")
+      gg.alert("Buy Gearbox")
     end
+    
+    gg.alert("After applying this engine, you have to reboot the game!")
     
   end
   
