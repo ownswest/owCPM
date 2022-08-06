@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.0\nLast Updated 2022.08.06.17.06.37 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.3.1\nLast Updated 2022.08.06.17.23.40 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -411,12 +411,10 @@ function run()
     gg.sleep(100)
     gg.refineNumber('0;0;0',gg.TYPE_FLOAT)
     gg.setVisible(false)
-    gg.sleep(100)
-    gg.getResults(100)
-    gg.setVisible(false)
     CR = gg.prompt({''},{[1]='3'},{[1]='number'})
     gg.refineNumber('0;0;0',gg.TYPE_FLOAT)    
     gg.sleep(100)
+    gg.getResults(100)
     gg.editAll(CR[1],gg.TYPE_FLOAT)
     gg.sleep(100)
     gg.setVisible(false)
