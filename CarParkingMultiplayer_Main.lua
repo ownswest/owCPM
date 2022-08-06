@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.2.9\nLast Updated 2022.08.03.18.05.44 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.3.0\nLast Updated 2022.08.06.16.58.59 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -68,10 +68,10 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        'W16(Apply 1695hp 2254nm To L4 2.5)',
-        'Glitch(Apply 1695.999hp 2254.999nm To L4 2.5)',
-        'Glitch(Apply 99hp 2299nm To L4 2.5)',
-        'Fast Gearbox(0.0000000001S)'
+        'W16 1695hp(7000)\n    2254nm(3500)',
+        '    1695.999hp(1000)\n    2254.999nm(1010)',
+        '    99.999hp(8000)\n    2299.999nm(7900)',
+        '    Fast Gearbox(1E-10S)'
         
 },nil,' 『Engine』 ')
     
