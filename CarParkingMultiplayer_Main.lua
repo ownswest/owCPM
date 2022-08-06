@@ -68,10 +68,10 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        'W16 1695hp(7000)\n    2254nm(3500)',
-        '    1695.999hp(1000)\n    2254.999nm(1010)',
-        '    99.999hp(8000)\n    2299.999nm(7900)',
-        '    Fast Gearbox(1E-10S)'
+        '⛽   1695hp(7000)\n    2254nm(3500)',
+        '⛽   1695.999hp(1000)\n    2254.999nm(1010)',
+        '⛽   99.999hp(8000)\n    2299.999nm(7900)',
+        '⛽   Fast Gearbox(1E-10S)'
         
 },nil,' 『Engine』 ')
     
