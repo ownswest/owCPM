@@ -538,13 +538,51 @@ function run()
   end
   
   if menu==8 then
-    gg.setVisible(false)
-    gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("5000", gg.TYPE_FLOAT)
-    gg.getResults(100)
-    gg.editAll("50000000", gg.TYPE_FLOAT)
-    gg.clearResults(100)
-    gg.alert("Press Instagram")
+    nowPr("Get Money")
+    gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
+    mny=gg.choice({
+        
+        '50M',
+        'Unlimited (Key required)'
+        
+},nil,' 『Get money』 ')
+    
+    if mny==1 then    
+      gg.setVisible(false)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("5000", gg.TYPE_FLOAT)
+      gg.getResults(100)
+      gg.editAll("50000000", gg.TYPE_FLOAT)
+      gg.alert("Now Press The Instagram Button In 5 Seconds")
+      gg.sleep(5000)
+      gg.editAll("5000", gg.TYPE_FLOAT)
+      gg.clearResults(100)
+    end
+    
+    if mny==2 then
+      PIN = gg.prompt({'PIN'},{[1]=''},{[1]='text'})
+      if PIN[1]=="340000000000000000000000000000000000000" then
+        gg.toast('🔓')
+      else 
+        gg.toast("🔒")
+        os.exit()
+      end
+      gg.setVisible(false)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("50000000", gg.TYPE_FLOAT)
+      gg.getResults(2)
+      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
+      gg.clearResults(2)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("5000", gg.TYPE_FLOAT)
+      gg.getResults(100)
+      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
+      gg.alert("Now Press The Instagram Button In 5 Seconds")
+      gg.sleep(5000)
+      gg.editAll("5000", gg.TYPE_FLOAT)
+      gg.clearResults(100)
+    end
+  
   end
   
   if menu==9 then
