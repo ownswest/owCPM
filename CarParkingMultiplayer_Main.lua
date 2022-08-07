@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.2.01\nLast Updated 2022.08.07.19.42.40 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.3.2\nLast Updated 2022.08.07.19.42.40 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -542,7 +542,7 @@ function run()
     gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
     mny=gg.choice({
         
-        '50M',
+        '50,000,000',
         'Unlimited (Key required)'
         
 },nil,' 『Get money』 ')
