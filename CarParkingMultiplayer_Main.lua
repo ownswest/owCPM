@@ -562,9 +562,9 @@ function run()
     if mny==2 then
       PIN = gg.prompt({'PIN'},{[1]=''},{[1]='text'})
       if PIN[1]=="340000000000000000000000000000000000000" then
-        gg.toast('🔓')
+        gg.toast('Wait...')
       else 
-        gg.toast("🔒")
+        gg.toast("Wrong PIN🔒")
         return
       end
       gg.setVisible(false)
