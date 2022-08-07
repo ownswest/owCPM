@@ -565,7 +565,7 @@ function run()
         gg.toast('🔓')
       else 
         gg.toast("🔒")
-        os.exit()
+        return
       end
       gg.setVisible(false)
       gg.setRanges(gg.REGION_CODE_APP)
