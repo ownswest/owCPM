@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.2\nLast Updated 2022.08.07.19.42.40 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.3.3\nLast Updated 2022/08/08 18:09 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -68,9 +68,9 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        '⛽  1695hp(7000)\n     2254nm(3500)',
+        '⛽  1695.999hp(7000)\n     2254.999nm(3500)',
         '⛽  1695.999hp(1000)\n     2254.999nm(1010)',
-        '⛽  99.999hp(8000)\n     2299.999nm(7900)',
+        '⛽  99.99999hp(8000)\n     2299.999nm(7900)',
         '⛽   Fast Gearbox(1E-10S)'
         
 },nil,' 『Engine』 ')
@@ -85,7 +85,21 @@ function run()
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
+      gg.searchNumber("1120", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("1695.999", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
+      gg.getResults(4)
+      gg.editAll("2254.999", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("1250", gg.TYPE_FLOAT)
       gg.getResults(4)
       gg.editAll("2254.999", gg.TYPE_FLOAT)
       gg.clearResults(1)
@@ -103,7 +117,7 @@ function run()
       gg.getResults(1)
       gg.editAll("3500", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.alert("L4 2.5")
+      gg.alert("L4 2.5 or W16 8.0")
     end      
     
     if egn==2 then
@@ -142,7 +156,7 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("99.999", gg.TYPE_FLOAT)
+      gg.editAll("99.99999", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
