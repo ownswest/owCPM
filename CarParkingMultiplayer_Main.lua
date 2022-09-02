@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.3\nLast Updated 2022/08/08 18:09 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.3.4\nLast Updated 2022/09/02 20:12 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -520,13 +520,15 @@ function run()
     gg.refineNumber('0')
     gg.sleep(100)
     gg.refineNumber('0')
-    gg.getResults(4)
-    gg.setVisible(false)
-    SS = gg.prompt({''},{[1]='-89.9'},{[1]='number'})
-    gg.editAll(SS[1],gg.TYPE_FLOAT)
+    u = gg.getResults(4)
+    for i, v in ipairs(u) do
+      u[i].value = '-89.9'
+      u[i].freeze = true
+    end
+    gg.addListItems(u)
     gg.sleep(100)
     gg.setVisible(false)
-    nowPr("Value : "..SS[1])
+    nowPr("UFO!")
   end
   
   if menu==7 then
