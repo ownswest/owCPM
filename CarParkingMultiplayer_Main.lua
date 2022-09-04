@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.4\nLast Updated 2022/09/02 20:12 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!","Start","Hide")
+sta = gg.alert("0.3.5\nLast Updated 2022/09/04 12:31 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\n  BSD 2-Clause License\n  Copyright (c) 2022, ownswest\n\n  All rights reserved.","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -52,14 +52,15 @@ function run()
   clrRs()
   menu=gg.choice({
       
-      '   ⛽Engine⛽(x64 only)',
-      '   😁Long name😁',
-      '   🚗Get vehicle🚗',
-      '   ☀Chrome☀',
-      '   🌟Body kit🌟',
-      '   🚀Ufo🚀',
-      '   ⚙Handle angle⚙',
-      '   🎟Get money🎟',
+      '1   ⛽Engine⛽(x64 only)',
+      '2   😁Long name😁',
+      '3   🚗Get vehicle🚗',
+      '4   🎟Get money🎟(x64 only)',
+      '5   ☢Original Server For Blacklisted Engines☢(x64 only)',
+      '6   ☀Chrome☀',
+      '7   🌟Body kit🌟',
+      '8   🚀Ufo🚀',
+      '9   ⚙Handle angle⚙',
       'EXIT'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
@@ -71,7 +72,7 @@ function run()
         '⛽  1695.999hp(7000)\n     2254.999nm(3500)',
         '⛽  1695.999hp(1000)\n     2254.999nm(1010)',
         '⛽  99.99999hp(8000)\n     2299.999nm(7900)',
-        '⛽   Fast Gearbox(1E-10S)'
+        '⛽  Fast Gearbox(1E-10S)'
         
 },nil,' 『Engine』 ')
     
@@ -398,6 +399,72 @@ function run()
   end
   
   if menu==4 then
+    nowPr("Get Money")
+    gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
+    mny=gg.choice({
+        
+        '50,000,000',
+        'Unlimited (Key required)'
+        
+},nil,' 『Get money』 ')
+    
+    if mny==1 then    
+      gg.setVisible(false)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("5000", gg.TYPE_FLOAT)
+      gg.getResults(100)
+      gg.editAll("50000000", gg.TYPE_FLOAT)
+      gg.alert("Now Press The Instagram Button In 5 Seconds")
+      gg.sleep(5000)
+      gg.editAll("5000", gg.TYPE_FLOAT)
+      gg.clearResults(100)
+    end
+    
+    if mny==2 then
+      PIN = gg.prompt({'PIN'},{[1]=''},{[1]='text'})
+      if PIN[1]=="340000000000000000000000000000000000000" then
+        gg.toast('Wait...')
+      else 
+        gg.toast("Wrong PIN🔒")
+        return
+      end
+      gg.setVisible(false)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("50000000", gg.TYPE_FLOAT)
+      gg.getResults(2)
+      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
+      gg.clearResults(2)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("5000", gg.TYPE_FLOAT)
+      gg.getResults(100)
+      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
+      gg.alert("Now Press The Instagram Button In 5 Seconds")
+      gg.sleep(5000)
+      gg.editAll("5000", gg.TYPE_FLOAT)
+      gg.clearResults(100)
+    end
+  
+  end
+  
+  if menu==5 then
+    nowPr("Scanning Server Values")
+    gg.setVisible(false)
+    gg.alert("Go To Main Menu")
+    gg.setRanges(gg.REGION_CODE_APP)
+    gg.searchNumber("1790;2300", gg.TYPE_FLOAT)
+    gg.getResults(4)
+    gg.editAll("3.4E+38", gg.TYPE_FLOAT)
+    gg.clearResults(4)
+    gg.setRanges(gg.REGION_CODE_APP)
+    gg.searchNumber("90", gg.TYPE_FLOAT)
+    gg.getResults(100)
+    gg.editAll("-3.4E+38", gg.TYPE_FLOAT)
+    gg.alert("Go To The Online Menu")
+    gg.sleep(8000)
+    gg.editAll("90", gg.TYPE_FLOAT)
+  end
+  
+  if menu==6 then
     nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -435,7 +502,7 @@ function run()
     nowPr("Value : "..CR[1])
   end
   
-  if menu==5 then
+  if menu==7 then
     nowPr("Scanning Bodykit Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -497,7 +564,7 @@ function run()
     nowPr("Value : "..BD[1])
   end
   
-  if menu==6 then
+  if menu==8 then
     nowPr("Scanning UFO(Incline) Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -531,7 +598,7 @@ function run()
     nowPr("UFO!")
   end
   
-  if menu==7 then
+  if menu==9 then
     nowPr("Scanning Handle Angle Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -553,55 +620,7 @@ function run()
     nowPr("Value : "..SS[1])
   end
   
-  if menu==8 then
-    nowPr("Get Money")
-    gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
-    mny=gg.choice({
-        
-        '50,000,000',
-        'Unlimited (Key required)'
-        
-},nil,' 『Get money』 ')
-    
-    if mny==1 then    
-      gg.setVisible(false)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("5000", gg.TYPE_FLOAT)
-      gg.getResults(100)
-      gg.editAll("50000000", gg.TYPE_FLOAT)
-      gg.alert("Now Press The Instagram Button In 5 Seconds")
-      gg.sleep(5000)
-      gg.editAll("5000", gg.TYPE_FLOAT)
-      gg.clearResults(100)
-    end
-    
-    if mny==2 then
-      PIN = gg.prompt({'PIN'},{[1]=''},{[1]='text'})
-      if PIN[1]=="340000000000000000000000000000000000000" then
-        gg.toast('Wait...')
-      else 
-        gg.toast("Wrong PIN🔒")
-        return
-      end
-      gg.setVisible(false)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("50000000", gg.TYPE_FLOAT)
-      gg.getResults(2)
-      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
-      gg.clearResults(2)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("5000", gg.TYPE_FLOAT)
-      gg.getResults(100)
-      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
-      gg.alert("Now Press The Instagram Button In 5 Seconds")
-      gg.sleep(5000)
-      gg.editAll("5000", gg.TYPE_FLOAT)
-      gg.clearResults(100)
-    end
-  
-  end
-  
-  if menu==9 then
+  if menu==10 then
     nowPr("Exit")
     gg.setVisible(true)
     os.exit()
