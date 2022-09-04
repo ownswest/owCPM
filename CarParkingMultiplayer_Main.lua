@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.5\nLast Updated 2022/09/04 12:31 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide")
+sta = gg.alert("0.3.5\nLast Updated 2022/09/04 12:37 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
