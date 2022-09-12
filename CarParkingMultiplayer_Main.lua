@@ -25,12 +25,19 @@ else
   os.exit()
 end
 
-sta = gg.alert("0.3.5\nLast Updated 2022/09/12 19:24 (GMT+9)\nScripts For 4.8.8.3 CPM\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide")
+sta = gg.alert("0.3.5\nLast Updated 2022/09/12 19:28 (GMT+9)\nScripts For 4.8.8.3 CPM\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide","❌Exit❌")
 if sta==1 then
   gg.setVisible(true)
 end
+
 if sta==2 then
   gg.toast("Press The Icon To Launch")
+end
+
+if sta==3 then
+  nowPr("Exit")
+  gg.setVisible(true)
+  os.exit()
 end
 
 function run()
