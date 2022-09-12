@@ -39,7 +39,7 @@ else
   end
 end
 
-sta = gg.alert("0.3.5\nLast Updated 2022/09/04 12:37 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide")
+sta = gg.alert("0.3.5\nLast Updated 2022/09/12 18:25 (GMT+9)\n\nThe menu with the '⚠' mark will damage your account,\nand the menu with the '❌' mark has been detected!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide")
 if sta==1 then
   gg.setVisible(true)
 end
@@ -52,6 +52,8 @@ function run()
   clrRs()
   menu=gg.choice({
       
+      
+      'EXIT',
       '1   ⛽Engine⛽(x64 only)',
       '2   😁Long name😁',
       '3   🚗Get vehicle🚗',
@@ -60,12 +62,17 @@ function run()
       '6   ☀Chrome☀',
       '7   🌟Body kit🌟',
       '8   🚀Ufo🚀',
-      '9   ⚙Handle angle⚙',
-      'EXIT'
+      '9   ⚙Handle angle⚙'
       
     },nil,'@ownswest ( •̀ ω •́ ) ')
   
   if menu==1 then
+    nowPr("Exit")
+    gg.setVisible(true)
+    os.exit()
+  end
+  
+  if menu==2 then
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
@@ -200,7 +207,7 @@ function run()
     
   end
   
-  if menu==2 then
+  if menu==3 then
     nowPr("Long Name Selected")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -224,7 +231,7 @@ function run()
     nowPr("Long Name Is Possible")
   end
   
-  if menu==3 then
+  if menu==4 then
     nowPr("Scanning Incline Values")
     num = '85'
     gg.setVisible(false)
@@ -398,7 +405,7 @@ function run()
     gg.editAll(num,gg.TYPE_DWORD)
   end
   
-  if menu==4 then
+  if menu==5 then
     nowPr("Get Money")
     gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
     mny=gg.choice({
@@ -446,7 +453,7 @@ function run()
   
   end
   
-  if menu==5 then
+  if menu==6 then
     nowPr("Scanning Server Values")
     gg.setVisible(false)
     gg.alert("Go To Main Menu")
@@ -464,7 +471,7 @@ function run()
     gg.editAll("90", gg.TYPE_FLOAT)
   end
   
-  if menu==6 then
+  if menu==7 then
     nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -502,7 +509,7 @@ function run()
     nowPr("Value : "..CR[1])
   end
   
-  if menu==7 then
+  if menu==8 then
     nowPr("Scanning Bodykit Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -564,7 +571,7 @@ function run()
     nowPr("Value : "..BD[1])
   end
   
-  if menu==8 then
+  if menu==9 then
     nowPr("Scanning UFO(Incline) Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -598,7 +605,7 @@ function run()
     nowPr("UFO!")
   end
   
-  if menu==9 then
+  if menu==10 then
     nowPr("Scanning Handle Angle Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -618,12 +625,6 @@ function run()
     gg.sleep(100)
     gg.setVisible(false)
     nowPr("Value : "..SS[1])
-  end
-  
-  if menu==10 then
-    nowPr("Exit")
-    gg.setVisible(true)
-    os.exit()
   end
   
   clrRs()
