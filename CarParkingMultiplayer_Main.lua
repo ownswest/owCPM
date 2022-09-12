@@ -25,7 +25,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("0.3.5\nLast Updated 2022/09/12 19:28 (GMT+9)\nScripts For 4.8.8.3 CPM\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide","❌Exit❌")
+sta = gg.alert("❤Script V.0.3.6 2022/09/12 19:28 (GMT+9)❤\nFor 4.8.8.3 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","Start","Hide","❌Exit❌")
 if sta==1 then
   gg.setVisible(true)
 end
