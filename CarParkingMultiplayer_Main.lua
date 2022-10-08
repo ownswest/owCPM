@@ -70,7 +70,7 @@ function run()
       os.exit()
     end
 
-    if not Escape==1 then
+    if Escape==2 then
       nowPr("Hide")
       gg.toast("Press The Icon To Launch")
     end
