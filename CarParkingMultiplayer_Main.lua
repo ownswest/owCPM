@@ -61,6 +61,7 @@ function run()
     },nil,'ownswest_CPM')
   
   if menu==1 then
+
     Escape=gg.alert('Are You Sure To Quit?\nOr Hide Menu?','❌EXIT❌','☀Hide☀')
 
     if Escape==1 then
@@ -68,6 +69,7 @@ function run()
       gg.setVisible(true)
       os.exit()
     end
+
     if not Escape==1 then
       nowPr("Hide")
       gg.toast("Press The Icon To Launch")
@@ -78,10 +80,10 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        '⛽  1695.999hp(7000)\n     2254.999nm(3500)',
-        '⛽  1695.999hp(1000)\n     2254.999nm(1010)',
-        '⛽  99.99999hp(8000)\n     2299.999nm(7900)',
-        '⛽  Fast Gearbox(1E-10S)'
+        '⛽W16  1695.999hp(7000)\n         2254.999nm(3500)',
+        '⛽     1695.999hp(1000)\n         2254.999nm(1010)',
+        '⛽     99.99999hp(8000)\n         2299.999nm(7900)',
+        '⛽     Fast Gearbox(1E-10S)'
         
 },nil,' 『Engine』 ')
     
