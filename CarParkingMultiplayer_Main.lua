@@ -25,13 +25,14 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.3.6 2022/09/12 19:28 (GMT+9)❤\n       -For 4.8.8.3 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.3.7 2022/10/09 00:17 (GMT+9)❤\n       -For 4.8.8.3 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
 end
 
 if sta==2 then
+  nowPr("Hide")
   gg.toast("Press The Icon To Launch")
 end
 
@@ -46,7 +47,6 @@ function run()
   clrRs()
   menu=gg.choice({
       
-      
       'X   ❌EXIT❌',
       '1   ⛽Engine⛽(x64 only)',
       '2   😁Long name😁',
@@ -58,12 +58,20 @@ function run()
       '8   🚀Ufo🚀',
       '9   ⚙Handle angle⚙'
       
-    },nil,'ownswest_CPM ( •̀ ω •́ ) ')
+    },nil,'ownswest_CPM')
   
   if menu==1 then
-    nowPr("Exit")
-    gg.setVisible(true)
-    os.exit()
+    Escape=gg.alert('Are You Sure To Quit?\nOr Hide Menu?','❌EXIT❌','☀Hide☀')
+
+    if Escape==1 then
+      nowPr("Exit")
+      gg.setVisible(true)
+      os.exit()
+    end
+    if not Escape==1 then
+      nowPr("Hide")
+      gg.toast("Press The Icon To Launch")
+    end
   end
   
   if menu==2 then
