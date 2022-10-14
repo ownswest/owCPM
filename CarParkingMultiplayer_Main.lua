@@ -391,7 +391,7 @@ function run()
     if car==4 then
       rwad=gg.choice({
           
-          'Dodge Ram (7 Days)'.
+          'Dodge Ram (7 Days)',
           'Mercedes Benz Cls (14 Days)'
           
         },nil,'')
