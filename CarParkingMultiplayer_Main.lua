@@ -25,7 +25,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.3.7 2022/10/09 00:17 (GMT+9)❤\n       -For 4.8.8.3 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.3.7 2022/10/14 21:42 (GMT+9)❤\n        -For ~4.8.8.5 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -80,10 +80,10 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        '⛽W16  1695.999hp(7000)\n         2254.999nm(3500)',
-        '⛽     1695.999hp(1000)\n         2254.999nm(1010)',
-        '⛽     99.99999hp(8000)\n         2299.999nm(7900)',
-        '⛽     Fast Gearbox(1E-10S)'
+        '⛽W16     1695.999hp(7000)\n              2254.999nm(3500)',
+        '⛽        1695.999hp(1000)\n              2254.999nm(1010)',
+        '⛽        99.99999hp(8000)\n              2299.999nm(7900)',
+        '⛽        Fast Gearbox(1E-10S)'
         
 },nil,' 『Engine』 ')
     
@@ -247,108 +247,109 @@ function run()
         '⚠🎱Value🎱',
         '   💰Cash💰',
         '   📀Coin📀',
+        '   🎁Reward🎁',
         '⚠🙄Unaccessible🙄'
         
 },nil,' 『Get vehicle』 ')
     
     if car==1 then
-      BC = gg.prompt({'Type Value'},{[1]='357'},{[1]='number'})
+      BC = gg.prompt({'Type Value'},{[1]='359'},{[1]='number'})
       snm = BC[1]
     end
     
     if car==2 then
       cash=gg.choice({
           
-          'F1 ¹⁸⁰⁰⁰',
-          'F1 ¹²⁰⁰⁰',
-          'BUG',
-          'M2',
-          'M4',
-          'M5',
-          'X6',
-          'M8',
-          'I8',
-          'S',
-          'E',
-          'GT63',
-          'URUS',
-          'VIPER',
-          'R32',
-          '180SX',
-          '350Z',
-          'CAMRY'
+          'Blue F1 ¹⁸⁰⁰⁰',
+          'Red F1 ¹²⁰⁰⁰',
+          'Buggy',
+          'Bmw M2',
+          'Bmw M4',
+          'Bmw M5',
+          'Bmw X6',
+          'Bmw M8',
+          'Bmw I8',
+          'Mercedes Benz S Class',
+          'Mercedes Benz E Class',
+          'Mercedes Benz GT63',
+          'Lamborghini Urus',
+          'Dodge Viper',
+          'Nissan R32',
+          'Nissan 180SX',
+          'Nissan 350Z',
+          'Toyota Camry'
           
         },nil,' 『Cash』 ')
       
-      if cash==1 then --F1 ¹⁸⁰⁰⁰
+      if cash==1 then --Blue F1 ¹⁸⁰⁰⁰
         snm = 357
       end
       
-      if cash==2 then --F1 ¹²⁰⁰⁰
+      if cash==2 then --Red F1 ¹²⁰⁰⁰
         snm = 341
       end
       
-      if cash==3 then --BUG
+      if cash==3 then --Buggy
         snm = 356
       end
       
-      if cash==4 then --M2
+      if cash==4 then --Bmw M2
         snm = 295
       end
       
-      if cash==5 then --M4
+      if cash==5 then --Bmw M4
         snm = 339
       end
       
-      if cash==6 then --M5
+      if cash==6 then --Bmw M5
         snm = 260
       end
       
-      if cash==7 then --X6
+      if cash==7 then --Bmw X6
         snm = 280
       end
       
-      if cash==8 then --M8
+      if cash==8 then --Bmw M8
         snm = 324
       end
       
-      if cash==9 then --I8
+      if cash==9 then --Bmw I8
         snm = 312
       end
       
-      if cash==10 then --S
+      if cash==10 then --Mercedes Benz S Class
         snm = 310
       end
       
-      if cash==11 then --E
+      if cash==11 then --Mercedes Benz E Class
         snm = 276
       end
       
-      if cash==12 then --GT63
+      if cash==12 then --Mercedes Benz GT63
         snm = 322
       end
       
-      if cash==13 then --URUS
+      if cash==13 then --Lamborghini Urus
         snm = 293
       end
       
-      if cash==14 then --VIPER
+      if cash==14 then --Dodge Viper
         snm = 321
       end
       
-      if cash==15 then --R32
+      if cash==15 then --Nissan R32
         snm = 342
       end
       
-      if cash==16 then --180SX
+      if cash==16 then --Nissan 180SX
         snm = 305
       end
       
-      if cash==17 then --350Z
+      if cash==17 then --Nissan 350Z
         snm = 325
       end
       
-      if cash==18 then --CAMRY
+      if cash==18 then --Toyota Camry
         snm = 288
       end
       
@@ -357,37 +358,55 @@ function run()
     if car==3 then
       coin=gg.choice({
           
-          'G.C³⁰⁰',
-          '720⁵⁰⁰',
-          'C8⁵⁰⁰',
-          'BENTLEY⁵⁰⁰',
+          'Jeep Grand Cherokee ³⁰⁰',
+          'McLaren 720S ⁵⁰⁰',
+          'Corvette C8 ⁵⁰⁰',
+          'Bentley Continental GT ⁵⁰⁰',
           'TRUCK¹⁰⁰⁰'
           
         },nil,' 『Coin』 ')
       
-      if coin==1 then --G.C³⁰⁰
+      if coin==1 then --Jeep Grand Cherokee ³⁰⁰
         snm = 353
       end
       
-      if coin==2 then --720⁵⁰⁰
+      if coin==2 then --McLaren 720S ⁵⁰⁰
         snm = 354
       end
       
-      if coin==3 then --C8⁵⁰⁰
+      if coin==3 then --Corvette C8 ⁵⁰⁰
         snm = 358
       end
       
-      if coin==4 then --BENTLEY⁵⁰⁰
+      if coin==4 then --Bentley Continental GT ⁵⁰⁰
         snm = 361
       end
       
-      if coin==5 then --TRUCK¹⁰⁰⁰
+      if coin==5 then --TRUCK ¹⁰⁰⁰
         snm = 368
       end
       
     end
     
     if car==4 then
+      rwad=gg.choice({
+          
+          'Dodge Ram (7 Days)'.
+          'Mercedes Benz Cls (14 Days)'
+          
+        },nil,'')
+      
+      if rwad==1 then --Dodge Ram (7 Days)
+        snm = 359
+      end
+      
+      if rwad== then --Mercedes Benz Cls (14 Days)
+        snm = 371
+      end
+      
+    end
+    
+    if car==5 then
       unac=gg.choice({
           
           'H1'
@@ -401,10 +420,41 @@ function run()
     end
     
     gg.editAll(snm,gg.TYPE_DWORD)
-    gg.toast('Purchase #18 Vehicles In 10 Seconds And Restart The Game')
+    gg.toast('Buy The #18 Vehicles In 15 Seconds')
     gg.setVisible(false)
     nowPr("Ready To Get Vehicle")
-    gg.sleep(10000)
+    gg.toast(15)
+    gg.sleep(1000)
+    gg.toast(14)
+    gg.sleep(1000)
+    gg.toast(13)
+    gg.sleep(1000)
+    gg.toast(12)
+    gg.sleep(1000)
+    gg.toast(11)
+    gg.sleep(1000)
+    gg.toast(10)
+    gg.sleep(1000)
+    gg.toast(9)
+    gg.sleep(1000)
+    gg.toast(8)
+    gg.sleep(1000)
+    gg.toast(7)
+    gg.sleep(1000)
+    gg.toast(6)
+    gg.sleep(1000)
+    gg.toast(5)
+    gg.sleep(1000)
+    gg.toast(4)
+    gg.sleep(1000)
+    gg.toast(3)
+    gg.sleep(1000)
+    gg.toast(2)
+    gg.sleep(1000)
+    gg.toast(1)
+    gg.sleep(1000)
+    gg.toast(0)
+    gg.sleep(1000)
     gg.setVisible(false)
     gg.editAll(num,gg.TYPE_DWORD)
   end
@@ -426,7 +476,18 @@ function run()
       gg.getResults(100)
       gg.editAll("50000000", gg.TYPE_FLOAT)
       gg.alert("Now Press The Instagram Button In 5 Seconds")
-      gg.sleep(5000)
+      gg.toast(5)
+      gg.sleep(1000)
+      gg.toast(4)
+      gg.sleep(1000)
+      gg.toast(3)
+      gg.sleep(1000)
+      gg.toast(2)
+      gg.sleep(1000)
+      gg.toast(1)
+      gg.sleep(1000)
+      gg.toast(0)
+      gg.sleep(1000)
       gg.editAll("5000", gg.TYPE_FLOAT)
       gg.clearResults(100)
     end
@@ -450,7 +511,18 @@ function run()
       gg.getResults(100)
       gg.editAll("3.4E+38", gg.TYPE_FLOAT)
       gg.alert("Now Press The Instagram Button In 5 Seconds")
-      gg.sleep(5000)
+      gg.toast(5)
+      gg.sleep(1000)
+      gg.toast(4)
+      gg.sleep(1000)
+      gg.toast(3)
+      gg.sleep(1000)
+      gg.toast(2)
+      gg.sleep(1000)
+      gg.toast(1)
+      gg.sleep(1000)
+      gg.toast(0)
+      gg.sleep(1000)
       gg.editAll("5000", gg.TYPE_FLOAT)
       gg.clearResults(100)
     end
@@ -470,8 +542,19 @@ function run()
     gg.searchNumber("90", gg.TYPE_FLOAT)
     gg.getResults(100)
     gg.editAll("-3.4E+38", gg.TYPE_FLOAT)
-    gg.alert("Go To The Online Menu")
-    gg.sleep(8000)
+    gg.alert("Go To The Online Menu In 5 Seconds")
+    gg.toast(5)
+    gg.sleep(1000)
+    gg.toast(4)
+    gg.sleep(1000)
+    gg.toast(3)
+    gg.sleep(1000)
+    gg.toast(2)
+    gg.sleep(1000)
+    gg.toast(1)
+    gg.sleep(1000)
+    gg.toast(0)
+    gg.sleep(1000)
     gg.editAll("90", gg.TYPE_FLOAT)
   end
   
