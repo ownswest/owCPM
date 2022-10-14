@@ -400,7 +400,7 @@ function run()
         snm = 359
       end
       
-      if rwad== then --Mercedes Benz Cls (14 Days)
+      if rwad==2 then --Mercedes Benz Cls (14 Days)
         snm = 371
       end
       
