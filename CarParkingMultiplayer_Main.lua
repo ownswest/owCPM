@@ -504,7 +504,6 @@ function run()
   
   if menu==5 then
     nowPr("Get Money&Coin")
-    gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
     mny=gg.choice({
         
         '50,000,000 Money',
@@ -514,6 +513,7 @@ function run()
     
     if mny==1 then    
       gg.setVisible(false)
+      gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
       gg.setRanges(gg.REGION_CODE_APP)
       gg.searchNumber("5000", gg.TYPE_FLOAT)
       gg.getResults(100)
