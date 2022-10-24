@@ -560,7 +560,8 @@ function run()
     
     if mny==2 then
       gg.setVisible(false)
-      gg.alert("Open The Animation Purchase Window!")
+      gg.alert("Open The Animation Purchase Window In 5 Seconds")
+      fiveSec()
       gg.setRanges(gg.REGION_ANONYMOUS)
       gg.searchNumber("500;300", gg.TYPE_DWORD)
       gg.sleep(100)
