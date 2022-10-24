@@ -25,7 +25,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.3.9 2022/10/14 21:42 (GMT+9)❤\n        -For ~4.8.8.5 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.4.0 2022/10/24 20:32 (GMT+9)❤\n             -For ~4.8.8.9 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -49,14 +49,14 @@ function run()
       
       'X   ❌EXIT❌',
       '1   ⛽Engine⛽(x64 only)',
-      '2   😁Long name😁',
-      '3   🚗Get vehicle🚗',
-      '4   🎟Get money🎟(x64 only)',
+      '2   😁Long Name😁',
+      '3   🚗Get Vehicle🚗',
+      '4   🎟Get Money&Coin🎟(x64 only)',
       '5   ☢Original Server For Blacklisted Engines☢(x64 only)',
       '6   ☀Chrome☀',
-      '7   🌟Body kit🌟',
+      '7   🌟Body Kit🌟',
       '8   🚀Ufo🚀',
-      '9   ⚙Handle angle⚙'
+      '9   ⚙Handle Angle⚙'
       
     },nil,'ownswest_CPM')
   
@@ -80,7 +80,7 @@ function run()
     nowPr("Scanning Engine Values")
     egn=gg.choice({
         
-        '⛽W16     1695.999hp(7000)\n              2254.999nm(3500)',
+        '⛽W16     1695hp(7000)\n              2254nm(3500)',
         '⛽        1695.999hp(1000)\n              2254.999nm(1010)',
         '⛽        99.99999hp(8000)\n              2299.999nm(7900)',
         '⛽        Fast Gearbox(1E-10S)'
@@ -92,28 +92,28 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("1695.999", gg.TYPE_FLOAT)
+      gg.editAll("1695", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("1120", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("1695.999", gg.TYPE_FLOAT)
+      gg.editAll("1695", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("2254.999", gg.TYPE_FLOAT)
+      gg.editAll("2254", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("1250", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("2254.999", gg.TYPE_FLOAT)
+      gg.editAll("2254", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
@@ -129,7 +129,7 @@ function run()
       gg.getResults(1)
       gg.editAll("3500", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.alert("L4 2.5 or W16 8.0")
+      gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
     end      
     
     if egn==2 then
@@ -160,7 +160,7 @@ function run()
       gg.getResults(1)
       gg.editAll("1010", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.alert("L4 2.5")
+      gg.alert("Buy This Engine : L4 2.5")
     end
     
     if egn==3 then      
@@ -191,7 +191,7 @@ function run()
       gg.getResults(1)
       gg.editAll("7900", gg.TYPE_FLOAT)
       gg.clearResults(3)
-      gg.alert("L4 2.5")
+      gg.alert("Buy This Engine : L4 2.5")
     end
     
     if egn==4 then
@@ -200,14 +200,25 @@ function run()
       gg.searchNumber("0.1", gg.TYPE_FLOAT)
       gg.getResults(47)
       gg.editAll("0.0000000001", gg.TYPE_FLOAT)
-      gg.alert("Buy Gearbox")
-      gg.sleep(5000)
+      gg.alert("Buy This Engine In 5 Seconds: Fast Gearbox")
+      gg.toast(5)
+      gg.sleep(1000)
+      gg.toast(4)
+      gg.sleep(1000)
+      gg.toast(3)
+      gg.sleep(1000)
+      gg.toast(2)
+      gg.sleep(1000)
+      gg.toast(1)
+      gg.sleep(1000)
+      gg.toast(0)
+      gg.sleep(1000)
       gg.setVisible(false)
       gg.editAll("0.1", gg.TYPE_FLOAT)
       gg.clearResults(47)
     end
     
-    gg.alert("If You Don't Restart The Game, There Can Be An Error!")
+    gg.toast("If You Don't Restart The CPM After This Operation, There Could Be A Bug In The CPM!")
     
   end
   
@@ -215,14 +226,56 @@ function run()
     nowPr("Long Name Selected")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.alert("If you want to increase the success rate?\nDo not close the 'ENTER YOUR NAME:' settings window!")
+    gg.alert("Do Not Close The 'ENTER YOUR NAME:' Settings Window!")
     gg.alert("Set The Name To 'owns' In 10 Seconds")
-    gg.sleep(10000)
+    gg.toast(10)
+    gg.sleep(1000)
+    gg.toast(9)
+    gg.sleep(1000)
+    gg.toast(8)
+    gg.sleep(1000)
+    gg.toast(7)
+    gg.sleep(1000)
+    gg.toast(6)
+    gg.sleep(1000)
+    gg.toast(5)
+    gg.sleep(1000)
+    gg.toast(4)
+    gg.sleep(1000)
+    gg.toast(3)
+    gg.sleep(1000)
+    gg.toast(2)
+    gg.sleep(1000)
+    gg.toast(1)
+    gg.sleep(1000)
+    gg.toast(0)
+    gg.sleep(1000)
     gg.searchNumber("12;4", gg.TYPE_DWORD)
     gg.sleep(100)
     gg.refineNumber("12;4", gg.TYPE_DWORD)
     gg.alert("Set The Name To 'ownswest' In 10 Seconds")
-    gg.sleep(10000)
+    gg.toast(10)
+    gg.sleep(1000)
+    gg.toast(9)
+    gg.sleep(1000)
+    gg.toast(8)
+    gg.sleep(1000)
+    gg.toast(7)
+    gg.sleep(1000)
+    gg.toast(6)
+    gg.sleep(1000)
+    gg.toast(5)
+    gg.sleep(1000)
+    gg.toast(4)
+    gg.sleep(1000)
+    gg.toast(3)
+    gg.sleep(1000)
+    gg.toast(2)
+    gg.sleep(1000)
+    gg.toast(1)
+    gg.sleep(1000)
+    gg.toast(0)
+    gg.sleep(1000)
     gg.refineNumber("12;8", gg.TYPE_DWORD)
     gg.sleep(100)
     gg.refineNumber("12;8", gg.TYPE_DWORD)
@@ -420,19 +473,9 @@ function run()
     end
     
     gg.editAll(snm,gg.TYPE_DWORD)
-    gg.toast('Buy The #18 Vehicles In 15 Seconds')
+    gg.toast('Buy The #18 Vehicles In 10 Seconds')
     gg.setVisible(false)
     nowPr("Ready To Get Vehicle")
-    gg.toast(15)
-    gg.sleep(1000)
-    gg.toast(14)
-    gg.sleep(1000)
-    gg.toast(13)
-    gg.sleep(1000)
-    gg.toast(12)
-    gg.sleep(1000)
-    gg.toast(11)
-    gg.sleep(1000)
     gg.toast(10)
     gg.sleep(1000)
     gg.toast(9)
@@ -460,12 +503,12 @@ function run()
   end
   
   if menu==5 then
-    nowPr("Get Money")
+    nowPr("Get Money&Coin")
     gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
     mny=gg.choice({
         
-        '50,000,000',
-        'Unlimited (Key required)'
+        '50,000,000 Money',
+        '500,000 Coin'
         
 },nil,' 『Get money』 ')
     
@@ -493,24 +536,15 @@ function run()
     end
     
     if mny==2 then
-      PIN = gg.prompt({'PIN'},{[1]=''},{[1]='text'})
-      if PIN[1]=="340000000000000000000000000000000000000" then
-        gg.toast('Wait...')
-      else 
-        gg.toast("Wrong PIN🔒")
-        return
-      end
       gg.setVisible(false)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("50000000", gg.TYPE_FLOAT)
-      gg.getResults(2)
-      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
-      gg.clearResults(2)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("5000", gg.TYPE_FLOAT)
+      gg.alert("Open The Animation Purchase Window!")
+      gg.setRanges(gg.REGION_ANONYMOUS)
+      gg.searchNumber("500;300", gg.TYPE_DWORD)
+      gg.sleep(100)
+      gg.refineNumber("500",gg.TYPE_DWORD)
       gg.getResults(100)
-      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
-      gg.alert("Now Press The Instagram Button In 5 Seconds")
+      gg.editAll("-500000", gg.TYPE_DWORD)
+      gg.alert("Now Buy The Animation(The Last One) In 5 Seconds")
       gg.toast(5)
       gg.sleep(1000)
       gg.toast(4)
@@ -523,8 +557,7 @@ function run()
       gg.sleep(1000)
       gg.toast(0)
       gg.sleep(1000)
-      gg.editAll("5000", gg.TYPE_FLOAT)
-      gg.clearResults(100)
+      gg.editAll("500", gg.TYPE_FLOAT)
     end
   
   end
@@ -562,7 +595,7 @@ function run()
     nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.alert('You want the original server?\nOnly do this!\n\nCAR : SPECULAR\nWHEEL : MAIN, SPECULAR, REFLECTION')
+    gg.alert("You want the original server?\nDon't do this part!\n\n[CAR-REFLECTION]")
     gg.setVisible(false)
     gg.toast('#FFFFFF 1/4')
     gg.sleep(5000)
