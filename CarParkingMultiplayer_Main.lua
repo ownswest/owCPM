@@ -318,7 +318,7 @@ function run()
       gg.clearResults(47)
     end
     
-    if egn==4 then    
+    if egn==5 then    
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("5900", gg.TYPE_FLOAT)
