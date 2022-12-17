@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.4.5 2022/12/17 15:25 (GMT+9)❤\n             -For ~4.8.9.1.9 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.4.8 2022/12/17 15:25 (GMT+9)❤\n             -For ~4.8.9.1.9 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -190,7 +190,7 @@ function run()
         
         '1695hp(7000)\n2254nm(3500)',
         '1695.999hp(1000)\n2254.999nm(1010)',
-        '99.99999hp(8000)\n2299.999nm(7900)',
+        '300.3003hp(8000)\n2298.765nm(7900)',
         'Fast Gearbox(1E-10S)',
         '2000hp(7000)\n3000nm(3500)'
         
@@ -279,14 +279,14 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("99.99999", gg.TYPE_FLOAT)
+      gg.editAll("300.3003", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("2299.999", gg.TYPE_FLOAT)
+      gg.editAll("2298.765", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
