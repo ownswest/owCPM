@@ -190,7 +190,7 @@ function run()
         
         '1695hp(7000)\n2254nm(3500)',
         '1695.999hp(1000)\n2254.999nm(1010)',
-        '300.3003hp(8000)\n2298.765nm(7900)',
+        '300hp(8000)\n2300nm(7900)',
         'Fast Gearbox(1E-10S)',
         '2000hp(7000)\n3000nm(3500)'
         
@@ -279,14 +279,14 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("300.3003", gg.TYPE_FLOAT)
+      gg.editAll("300", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("2298.765", gg.TYPE_FLOAT)
+      gg.editAll("2300", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
