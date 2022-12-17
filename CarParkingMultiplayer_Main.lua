@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.4.5 2022/11/05 11:26 (GMT+9)❤\n             -For ~4.8.8.9 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.4.5 2022/12/17 15:25 (GMT+9)❤\n             -For ~4.8.9.1.9 Car Parking\n\nThe menu with the '⚠' mark will damage your account!\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -513,9 +513,11 @@ function run()
           
           'Jeep Grand Cherokee ³⁰⁰',
           'McLaren 720S ⁵⁰⁰',
-          'Corvette C8 ⁵⁰⁰',
+          'Chevrolet Corvette C8 ⁵⁰⁰',
           'Bentley Continental GT ⁵⁰⁰',
-          'TRUCK¹⁰⁰⁰'
+          'TRUCK ¹⁰⁰⁰',
+          'Mercedes Benz E320 1996 ⁵⁰⁰',
+          'Chevrolet Silverado ⁵⁰⁰'
           
         },nil,' 『Coin』 ')
       
@@ -527,7 +529,7 @@ function run()
         snm = 354
       end
       
-      if coin==3 then --Corvette C8 ⁵⁰⁰
+      if coin==3 then --Chevrolet Corvette C8 ⁵⁰⁰
         snm = 358
       end
       
@@ -537,6 +539,14 @@ function run()
       
       if coin==5 then --TRUCK ¹⁰⁰⁰
         snm = 368
+      end
+      
+      if coin==6 then --Mercedes Benz E320 1996 ⁵⁰⁰
+        snm = 373
+      end
+      
+      if coin==7 then --Chevrolet Silverado ⁵⁰⁰
+        snm = 374
       end
       
     end
