@@ -521,7 +521,7 @@ function run()
           'Chevrolet Corvette C8 ⁵⁰⁰',
           'Bentley Continental GT ⁵⁰⁰',
           'TRUCK ¹⁰⁰⁰',
-          'Mercedes Benz E320 1996 ⁵⁰⁰',
+          'Mercedes Benz W210 E55 ⁵⁰⁰',
           'Chevrolet Silverado ⁵⁰⁰'
           
         },nil,' 『Coin』 ')
@@ -546,7 +546,7 @@ function run()
         snm = 368
       end
       
-      if coin==6 then --Mercedes Benz E320 1996 ⁵⁰⁰
+      if coin==6 then --Mercedes Benz W210 E55 ⁵⁰⁰
         snm = 373
       end
       
