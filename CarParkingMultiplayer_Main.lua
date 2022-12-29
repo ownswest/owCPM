@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.0 2022/12/25 23:56 (GMT+9)❤\nFor 4.8.9.1.9 Carparkingmultiplayer\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.5.1 2022/12/29 13:16 (GMT+9)❤\nFor 4.8.9.1.9 Carparkingmultiplayer\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -646,12 +646,12 @@ function run()
     gg.editAll("3.4E+38", gg.TYPE_FLOAT)
     gg.clearResults(4)
     gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("90", gg.TYPE_FLOAT)
+    gg.searchNumber("100", gg.TYPE_FLOAT)
     gg.getResults(100)
     gg.editAll("-3.4E+38", gg.TYPE_FLOAT)
     gg.alert("Go To The Online Menu In 5 Seconds")
     fiveSec()
-    gg.editAll("90", gg.TYPE_FLOAT)
+    gg.editAll("100", gg.TYPE_FLOAT)
   end
   
   if menu==7 then
