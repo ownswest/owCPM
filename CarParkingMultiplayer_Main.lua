@@ -195,13 +195,11 @@ function run()
         
         '1695hp(7000)\n2254nm(3500)',
         '1695.999hp(1000)\n2254.999nm(1010)',
-        '150hp(8000)\n2150nm(7900)',
+        '100hp(8000)\n2100nm(7900)',
         'Fast Gearbox(1E-10S)',
-        '2000hp(7000)\n3000nm(3500)'
+        '1790hp(7000)\n2300nm(3500)'
         
 },nil,' 『Engine』 ')
-    
-    gg.alert("If You Don't Restart The CPM After This Operation, There Could Be A Bug In The CPM!")
     
     if egn==1 then
       gg.setRanges(gg.REGION_CODE_APP)
@@ -284,14 +282,14 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("150", gg.TYPE_FLOAT)
+      gg.editAll("100", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("2150", gg.TYPE_FLOAT)
+      gg.editAll("2100", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
@@ -342,31 +340,34 @@ function run()
       gg.setVisible(false)
       gg.searchNumber("190", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("2000", gg.TYPE_FLOAT)
+      gg.editAll("1790", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("1120", gg.TYPE_FLOAT)
       gg.getResults(1)
-      gg.editAll("2000", gg.TYPE_FLOAT)
+      gg.editAll("1790", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("300", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("3000", gg.TYPE_FLOAT)
+      gg.editAll("2300", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.sleep(500)
       gg.setRanges(gg.REGION_CODE_APP)
       gg.setVisible(false)
       gg.searchNumber("1250", gg.TYPE_FLOAT)
       gg.getResults(4)
-      gg.editAll("3000", gg.TYPE_FLOAT)
+      gg.editAll("2300", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
     end
+    
+    gg.alert("If You Don't Restart The CPM After This Operation, There Could Be A Bug In The CPM!")
+    
   end
   
   if menu==3 then
