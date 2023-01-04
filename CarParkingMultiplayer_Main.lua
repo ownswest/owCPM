@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.1 2022/12/29 13:16 (GMT+9)❤\nFor 4.8.9.1.9 Carparkingmultiplayer\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.5.2 2023/01/04 20:15 (GMT+9)❤\nFor 4.8.9.1.9 Carparkingmultiplayer\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -521,7 +521,7 @@ function run()
           'McLaren 720S ⁵⁰⁰',
           'Chevrolet Corvette C8 ⁵⁰⁰',
           'Bentley Continental GT ⁵⁰⁰',
-          'TRUCK ¹⁰⁰⁰',
+          'Kenworth T680 ¹⁰⁰⁰',
           'Mercedes Benz W210 E55 ⁵⁰⁰',
           'Chevrolet Silverado ⁵⁰⁰'
           
@@ -543,7 +543,7 @@ function run()
         snm = 361
       end
       
-      if coin==5 then --TRUCK ¹⁰⁰⁰
+      if coin==5 then --Kenworth T680 ¹⁰⁰⁰
         snm = 368
       end
       
