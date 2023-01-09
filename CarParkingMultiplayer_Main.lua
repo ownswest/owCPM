@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.2 2023/01/04 20:15 (GMT+9)❤\nFor 4.8.9.1.13 Carparkingmultiplayer\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022~2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.5.4 2023/01/09 19:39 (GMT+9)❤\nFor 4.8.9.1.13 Carparkingmultiplayer\n\nThis script is offered free of charge and without warranty.\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022~2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -184,8 +184,7 @@ function run()
     end
 
     if Escape==3 then
-      nowPr("Hide")
-      gg.toast("Press The Icon To Launch")
+      gg.alert("ownswest!","ownswest!")
     end
   end
   
