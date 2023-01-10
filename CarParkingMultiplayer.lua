@@ -170,7 +170,7 @@ function run()
   
   if menu==1 then
 
-    Escape=gg.alert('Are You Sure To Quit?\nOr Hide Menu?','❌EXIT❌','☀Hide☀','')
+    Escape=gg.alert('Are You Sure To Quit?\nOr Hide Menu?','❌EXIT❌','☀Hide☀','    ')
 
     if Escape==1 then
       nowPr("Exit")
