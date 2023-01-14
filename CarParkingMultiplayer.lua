@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.4 2023/01/09 19:39 (GMT+9)❤\nFor 4.8.9.1.13 Carparkingmultiplayer\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2022~2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.5.6 2023/01/15 01:09 (GMT+9)❤\nFor 4.8.9.1.13 Carparkingmultiplayer\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -156,10 +156,10 @@ function run()
   menu=gg.choice({
       
       'X   ❌EXIT❌',
-      '1   ⛽Engine⛽(x64 only)',
+      '1   ⛽Engine⛽',
       '2   😁Long Name😁',
       '3   🚗Get Vehicle🚗',
-      '4   🎟Get Money&Coin🎟(x64 only)',
+      '4   🎟Get Money&Coin🎟',
       '5   ☢Original Server For Blacklisted Engines☢(~4.8.8.9)',
       '6   ☀Chrome☀',
       '7   🌟Body Kit🌟',
@@ -313,7 +313,7 @@ function run()
       gg.searchNumber("0.1", gg.TYPE_FLOAT)
       gg.getResults(47)
       gg.editAll("0.0000000001", gg.TYPE_FLOAT)
-      gg.alert("Buy This Engine In 5 Seconds: Fast Gearbox")
+      gg.alert("Buy This Engine In 5 Seconds : Fast Gearbox")
       fiveSec()
       gg.setVisible(false)
       gg.editAll("0.1", gg.TYPE_FLOAT)
@@ -365,8 +365,6 @@ function run()
       gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
     end
     
-    gg.alert("If You Don't Restart The CPM After This Operation, There Could Be A Bug In The CPM!")
-    
   end
   
   if menu==3 then
@@ -394,7 +392,7 @@ function run()
   end
   
   if menu==4 then
-    nowPr("Scanning Incline Values")
+    nowPr("Scanning Car Values")
     num = '85'
     gg.setVisible(false)
     gg.setRanges(gg.REGION_CODE_APP)
@@ -418,96 +416,96 @@ function run()
     if car==2 then
       cash=gg.choice({
           
-          'Blue F1 ¹⁸⁰⁰⁰',
-          'Red F1 ¹²⁰⁰⁰',
-          'Buggy',
-          'Bmw M2',
-          'Bmw M4',
-          'Bmw M5',
-          'Bmw X6',
-          'Bmw M8',
-          'Bmw I8',
-          'Mercedes Benz S Class',
-          'Mercedes Benz E Class',
-          'Mercedes Benz GT63',
-          'Lamborghini Urus',
-          'Dodge Viper',
-          'Nissan R32',
-          'Nissan 180SX',
-          'Nissan 350Z',
-          'Toyota Camry'
+          'Blue F1 (₩18,000)',
+          'Red F1 (₩12,000)',
+          'Buggy (₩6,900)',
+          'Bmw M2 (₩2,700)',
+          'Bmw M4 (₩6,500)',
+          'Bmw M5 (₩3,900)',
+          'Bmw X6 (₩2,600)',
+          'Bmw M8 (₩4,800)',
+          'Bmw I8 (₩1,200)',
+          'Mercedes Benz S Class (₩3,900)',
+          'Mercedes Benz E Class (₩3,900)',
+          'Mercedes Benz GT63 (₩3,700)',
+          'Lamborghini Urus (₩2,700)',
+          'Dodge Viper (₩2,500)',
+          'Nissan R32 (₩5.500)',
+          'Nissan 180SX (₩2,700)',
+          'Nissan 350Z (₩3,700)',
+          'Toyota Camry (₩1,300)'
           
         },nil,' 『Cash』 ')
       
-      if cash==1 then --Blue F1 ¹⁸⁰⁰⁰
+      if cash==1 then --Blue F1 (₩18,000)
         snm = 357
       end
       
-      if cash==2 then --Red F1 ¹²⁰⁰⁰
+      if cash==2 then --Red F1 (₩12,000)
         snm = 341
       end
       
-      if cash==3 then --Buggy
+      if cash==3 then --Buggy (₩6,900)
         snm = 356
       end
       
-      if cash==4 then --Bmw M2
+      if cash==4 then --Bmw M2 (₩2,700)
         snm = 295
       end
       
-      if cash==5 then --Bmw M4
+      if cash==5 then --Bmw M4 (₩6,500)
         snm = 339
       end
       
-      if cash==6 then --Bmw M5
+      if cash==6 then --Bmw M5 (₩3,900)
         snm = 260
       end
       
-      if cash==7 then --Bmw X6
+      if cash==7 then --Bmw X6 (₩2,600)
         snm = 280
       end
       
-      if cash==8 then --Bmw M8
+      if cash==8 then --Bmw M8 (₩4,800)
         snm = 324
       end
       
-      if cash==9 then --Bmw I8
+      if cash==9 then --Bmw I8 (₩1,200)
         snm = 312
       end
       
-      if cash==10 then --Mercedes Benz S Class
+      if cash==10 then --Mercedes Benz S Class (₩3,900)
         snm = 310
       end
       
-      if cash==11 then --Mercedes Benz E Class
+      if cash==11 then --Mercedes Benz E Class (₩3,900)
         snm = 276
       end
       
-      if cash==12 then --Mercedes Benz GT63
+      if cash==12 then --Mercedes Benz GT63 (₩3,700)
         snm = 322
       end
       
-      if cash==13 then --Lamborghini Urus
+      if cash==13 then --Lamborghini Urus (₩2,700)
         snm = 293
       end
       
-      if cash==14 then --Dodge Viper
+      if cash==14 then --Dodge Viper (₩2,500)
         snm = 321
       end
       
-      if cash==15 then --Nissan R32
+      if cash==15 then --Nissan R32 (₩5.500)
         snm = 342
       end
       
-      if cash==16 then --Nissan 180SX
+      if cash==16 then --Nissan 180SX (₩2,700)
         snm = 305
       end
       
-      if cash==17 then --Nissan 350Z
+      if cash==17 then --Nissan 350Z (₩3,700)
         snm = 325
       end
       
-      if cash==18 then --Toyota Camry
+      if cash==18 then --Toyota Camry (₩1,300)
         snm = 288
       end
       
@@ -516,41 +514,41 @@ function run()
     if car==3 then
       coin=gg.choice({
           
-          'Jeep Grand Cherokee ³⁰⁰',
-          'McLaren 720S ⁵⁰⁰',
-          'Chevrolet Corvette C8 ⁵⁰⁰',
-          'Bentley Continental GT ⁵⁰⁰',
-          'Kenworth T680 ¹⁰⁰⁰',
-          'Mercedes Benz W210 E55 ⁵⁰⁰',
-          'Chevrolet Silverado ⁵⁰⁰'
+          'Jeep Grand Cherokee (300)',
+          'McLaren 720S (500)',
+          'Chevrolet Corvette C8 (500)',
+          'Bentley Continental GT (500)',
+          'Kenworth T680 (1000)',
+          'Mercedes Benz W210 E55 (500)',
+          'Chevrolet Silverado (500)'
           
         },nil,' 『Coin』 ')
       
-      if coin==1 then --Jeep Grand Cherokee ³⁰⁰
+      if coin==1 then --Jeep Grand Cherokee (300)
         snm = 353
       end
       
-      if coin==2 then --McLaren 720S ⁵⁰⁰
+      if coin==2 then --McLaren 720S (500)
         snm = 354
       end
       
-      if coin==3 then --Chevrolet Corvette C8 ⁵⁰⁰
+      if coin==3 then --Chevrolet Corvette C8 (500)
         snm = 358
       end
       
-      if coin==4 then --Bentley Continental GT ⁵⁰⁰
+      if coin==4 then --Bentley Continental GT (500)
         snm = 361
       end
       
-      if coin==5 then --Kenworth T680 ¹⁰⁰⁰
+      if coin==5 then --Kenworth T680 (1000)
         snm = 368
       end
       
-      if coin==6 then --Mercedes Benz W210 E55 ⁵⁰⁰
+      if coin==6 then --Mercedes Benz W210 E55 (500)
         snm = 373
       end
       
-      if coin==7 then --Chevrolet Silverado ⁵⁰⁰
+      if coin==7 then --Chevrolet Silverado (500)
         snm = 374
       end
       
@@ -628,7 +626,7 @@ function run()
       gg.refineNumber("500",gg.TYPE_DWORD)
       gg.getResults(100)
       gg.editAll("-500000", gg.TYPE_DWORD)
-      gg.alert("Now Buy The Animation(The Last One) In 5 Seconds")
+      gg.alert("Now Refresh The Animation Window And Buy The Animation(The Last One) In 5 Seconds")
       fiveSec()
       gg.editAll("500", gg.TYPE_FLOAT)
     end
