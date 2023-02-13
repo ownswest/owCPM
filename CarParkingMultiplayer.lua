@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.6 2023/01/15 01:09 (GMT+9)❤\nFor 4.8.9.1.13 Carparkingmultiplayer\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.5.8 2023/02/13 23:40 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
 
 if sta==1 then
   gg.setVisible(true)
@@ -393,7 +393,7 @@ function run()
   
   if menu==4 then
     nowPr("Scanning Car Values")
-    num = '85'
+    num = '134'
     gg.setVisible(false)
     gg.setRanges(gg.REGION_CODE_APP)
     gg.searchNumber(num,gg.TYPE_DWORD)
@@ -520,7 +520,9 @@ function run()
           'Bentley Continental GT (500)',
           'Kenworth T680 (1000)',
           'Mercedes Benz W210 E55 (500)',
-          'Chevrolet Silverado (500)'
+          'Chevrolet Silverado (500)',
+          '386',
+          '387'
           
         },nil,' 『Coin』 ')
       
@@ -550,6 +552,14 @@ function run()
       
       if coin==7 then --Chevrolet Silverado (500)
         snm = 374
+      end
+      
+      if coin==8 then --
+        snm = 386
+      end
+      
+      if coin==9 then --
+        snm = 387
       end
       
     end
@@ -586,7 +596,7 @@ function run()
     end
     
     gg.editAll(snm,gg.TYPE_DWORD)
-    gg.alert('Buy The #18 Vehicles In 5 Seconds')
+    gg.alert('Buy The #77 In 5 Seconds')
     gg.setVisible(false)
     nowPr("Ready To Get Vehicle")
     fiveSec()
