@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.8 2023/02/13 23:40 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","❌Exit❌")
+sta = gg.alert("❤Script V.0.5.8 2023/02/14 00:07 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -145,9 +145,9 @@ if sta==2 then
 end
 
 if sta==3 then
-  nowPr("Exit")
-  gg.setVisible(true)
-  os.exit()
+  nowPr("Copy Link")
+  gg.copyText('m.me/107792765546603')
+  gg.toast('"m.me/107792765546603" Link Copied!')
 end
 
 function run()
