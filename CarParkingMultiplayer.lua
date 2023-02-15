@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.8 2023/02/14 00:07 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.5.9 2023/02/15 19:31 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -521,6 +521,7 @@ function run()
           'Kenworth T680 (1000)',
           'Mercedes Benz W210 E55 (500)',
           'Chevrolet Silverado (500)',
+          '376',
           '386',
           '387'
           
@@ -555,10 +556,14 @@ function run()
       end
       
       if coin==8 then --
-        snm = 386
+        snm = 376
       end
       
       if coin==9 then --
+        snm = 386
+      end
+      
+      if coin==10 then --
         snm = 387
       end
       
