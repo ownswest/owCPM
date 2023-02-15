@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.5.9 2023/02/15 19:31 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.6.1 2023/02/15 21:35 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -521,9 +521,9 @@ function run()
           'Kenworth T680 (1000)',
           'Mercedes Benz W210 E55 (500)',
           'Chevrolet Silverado (500)',
-          '376',
-          '386',
-          '387'
+          'Unknown',
+          'KenBlock Ford F150 Hoonicorn (1000)',
+          'KenBlock Ford Mustang Hoonicorn (1000)'
           
         },nil,' 『Coin』 ')
       
@@ -559,11 +559,11 @@ function run()
         snm = 376
       end
       
-      if coin==9 then --
+      if coin==9 then --KenBlock Ford F150 Hoonicorn (1000)
         snm = 386
       end
       
-      if coin==10 then --
+      if coin==10 then --KenBlock Ford Mustang Hoonicorn (1000)
         snm = 387
       end
       
