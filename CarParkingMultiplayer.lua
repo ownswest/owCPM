@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.6.1 2023/02/15 21:35 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.6.3 2023/02/17 11:51 (GMT+9)❤\nFor ~4.8.9.1.13\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -409,7 +409,7 @@ function run()
 },nil,' 『Get vehicle』 ')
     
     if car==1 then
-      BC = gg.prompt({'Type Value'},{[1]='359'},{[1]='number'})
+      BC = gg.prompt({'Type Value'},{[1]='19'},{[1]='number'})
       snm = BC[1]
     end
     
@@ -521,7 +521,7 @@ function run()
           'Kenworth T680 (1000)',
           'Mercedes Benz W210 E55 (500)',
           'Chevrolet Silverado (500)',
-          'Unknown',
+          'Bugatti Chiron (500)',
           'KenBlock Ford F150 Hoonicorn (1000)',
           'KenBlock Ford Mustang Hoonicorn (1000)'
           
@@ -555,7 +555,7 @@ function run()
         snm = 374
       end
       
-      if coin==8 then --
+      if coin==8 then --Bugatti Chiron (500)
         snm = 376
       end
       
@@ -620,7 +620,10 @@ function run()
     
     if mny==1 then    
       gg.setVisible(false)
-      gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, Please Re-login.")
+      rel=gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, You need Re-login.","Go","Re-login")
+      if rel==2 then
+        return
+      end
       gg.setRanges(gg.REGION_CODE_APP)
       gg.searchNumber("5000", gg.TYPE_FLOAT)
       gg.getResults(100)
