@@ -160,7 +160,7 @@ function run()
       '2   😁Long Name😁',
       '3   🚗Get Vehicle🚗',
       '4   🎟Get Money&Coin🎟',
-      '5   ☢Original Server For Blacklisted Engines☢(~4.8.8.9)',
+      '5   ☢Original Server For Blacklisted Engines☢',
       '6   ☀Chrome☀',
       '7   🌟Body Kit🌟',
       '8   🚀Ufo🚀',
