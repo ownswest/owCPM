@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.6.6 2023/02/23 15:37 (GMT+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.6.7 2023/02/25 12:49 (GMT+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
