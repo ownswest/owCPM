@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.6.7 2023/02/25 12:49 (GMT+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.6.8 2023/02/27 15:48 (GMT+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -155,16 +155,17 @@ function run()
   clrRs()
   menu=gg.choice({
       
-      'X   ❌EXIT❌',
-      '1   ⛽Engine⛽',
-      '2   😁Long Name😁',
-      '3   🚗Get Vehicle🚗',
-      '4   🎟Get Money&Coin🎟',
-      '5   ☢Original Server For Blacklisted Engines☢',
-      '6   ☀Chrome☀',
-      '7   🌟Body Kit🌟',
-      '8   🚀Ufo🚀',
-      '9   ⚙Handle Angle⚙'
+      '00   ❌EXIT❌',
+      '01   ⛽Engine⛽',
+      '02   😁Long Name😁',
+      '03   🚗Get Vehicle🚗',
+      '04   🎟Get Money&Coin🎟',
+      '05   ☢Original Server For Blacklisted Engines☢',
+      '06   🚨Make All Car Police🚨 (Beta)',
+      '07   ☀Chrome☀',
+      '08   🌟Body Kit🌟',
+      '09   🚀Ufo🚀',
+      '10   ⚙Handle Angle⚙'
       
     },nil,'ownswest_CPM')
   
@@ -657,9 +658,9 @@ function run()
     gg.alert("Go To Main Menu")
     gg.setRanges(gg.REGION_CODE_APP)
     gg.searchNumber("1790;2300", gg.TYPE_FLOAT)
-    gg.getResults(4)
+    gg.getResults(2)
     gg.editAll("3.4E+38", gg.TYPE_FLOAT)
-    gg.clearResults(4)
+    gg.clearResults(2)
     gg.setRanges(gg.REGION_CODE_APP)
     gg.searchNumber("100", gg.TYPE_FLOAT)
     gg.getResults(100)
@@ -670,6 +671,18 @@ function run()
   end
   
   if menu==7 then
+    nowPr("Scanning Police Values")
+    gg.setVisible(false)
+    gg.alert("Go To Main Menu")
+    gg.setRanges(gg.REGION_CODE_APP)
+    gg.searchNumber("-5.77993553e-25F;-8.45156464e-14F;-2.87512967e-14F", gg.TYPE_FLOAT)
+    gg.getResults(3)
+    gg.editAll("-5.77993553e-25;-2.85362618e11;-6.13017998e13", gg.TYPE_FLOAT)
+    gg.clearResults(3)
+    gg.alert("Go To The Single Play")
+  end
+  
+  if menu==8 then
     nowPr("Scanning Chrome Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -707,7 +720,7 @@ function run()
     nowPr("Value : "..CR[1])
   end
   
-  if menu==8 then
+  if menu==9 then
     nowPr("Scanning Bodykit Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -738,7 +751,7 @@ function run()
     nowPr("Value : "..BD[1])
   end
   
-  if menu==9 then
+  if menu==10 then
     nowPr("Scanning UFO(Incline) Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
@@ -772,7 +785,7 @@ function run()
     nowPr("UFO!")
   end
   
-  if menu==10 then
+  if menu==11 then
     nowPr("Scanning Handle Angle Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_ANONYMOUS)
