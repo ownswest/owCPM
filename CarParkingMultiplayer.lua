@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.6.8 2023/02/27 15:48 (GMT+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.6.9 2023/03/01 17:16 (UTC+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -197,7 +197,8 @@ function run()
         '1695.999hp(1000)\n2254.999nm(1010)',
         '100hp(8000)\n2100nm(7900)',
         'Fast Gearbox(1E-10S)',
-        '1790hp(7000)\n2300nm(3500)'
+        '1790hp(7000)\n2300nm(3500)',
+        '2000hp(7000)\n3000nm(3500)'
         
 },nil,' 『Engine』 ')
     
@@ -362,6 +363,51 @@ function run()
       gg.searchNumber("1250", gg.TYPE_FLOAT)
       gg.getResults(4)
       gg.editAll("2300", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
+    end
+    
+    if egn==6 then    
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("5900", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("7000", gg.TYPE_FLOAT)
+      gg.clearResults(2)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("4100", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("3500", gg.TYPE_FLOAT)
+      gg.clearResults(3)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("190", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("2000", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("1120", gg.TYPE_FLOAT)
+      gg.getResults(1)
+      gg.editAll("2000", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("300", gg.TYPE_FLOAT)
+      gg.getResults(4)
+      gg.editAll("3000", gg.TYPE_FLOAT)
+      gg.clearResults(1)
+      gg.sleep(500)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.setVisible(false)
+      gg.searchNumber("1250", gg.TYPE_FLOAT)
+      gg.getResults(4)
+      gg.editAll("3000", gg.TYPE_FLOAT)
       gg.clearResults(1)
       gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
     end
