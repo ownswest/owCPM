@@ -179,7 +179,7 @@ function run()
       '09   🚀Ufo🚀',
       '10   ⚙Handle Angle⚙'
       
-    },nil,'ownswest_CPM')
+    },nil,'[ownswest_CPM.lua] Use at your own risk!')
   
   if menu==1 then
 
