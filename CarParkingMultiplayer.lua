@@ -161,7 +161,7 @@ function run()
       '03   🚗Get Vehicle🚗',
       '04   🎟Get Money&Coin🎟',
       '05   ☢Original Server For Blacklisted Engines☢',
-      '06   🚨Make All Car Police🚨 (Beta)',
+      '06   🪑Access To All Drivers Seats🪑 (Beta)',
       '07   ☀Chrome☀',
       '08   🌟Body Kit🌟',
       '09   🚀Ufo🚀',
