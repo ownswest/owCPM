@@ -133,7 +133,7 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.6.9 2023/03/01 17:16 (UTC+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("❤Script V.0.7.0 2023/03/11 15:51 (UTC+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -717,13 +717,12 @@ function run()
   end
   
   if menu==7 then
-    nowPr("Scanning Police Values")
+    nowPr("Scanning Seat Values")
     gg.setVisible(false)
-    gg.alert("Go To Main Menu")
     gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("-5.77993553e-25F;-8.45156464e-14F;-2.87512967e-14F", gg.TYPE_FLOAT)
+    gg.searchNumber("7.44413228e-25F;-1.27424102e34F;-2.87131023e-14F:21", gg.TYPE_FLOAT)
     gg.getResults(3)
-    gg.editAll("-5.77993553e-25;-2.85362618e11;-6.13017998e13", gg.TYPE_FLOAT)
+    gg.editAll("7.44413228e-25F;-2.85362618e11F;-6.13017998e13F:21", gg.TYPE_FLOAT)
     gg.clearResults(3)
     gg.alert("Go To The Single Play")
   end
