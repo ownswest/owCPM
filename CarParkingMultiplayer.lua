@@ -721,11 +721,10 @@ function run()
     nowPr("Scanning Seat Values")
     gg.setVisible(false)
     gg.setRanges(gg.REGION_CODE_APP)
-    gg.searchNumber("7.44413228e-25F;-1.27424102e34F;-2.87131023e-14F:21", gg.TYPE_FLOAT)
-    gg.getResults(3)
-    gg.editAll("7.44413228e-25F;-2.85362618e11F;-6.13017998e13F:21", gg.TYPE_FLOAT)
-    gg.clearResults(3)
-    gg.alert("Go To The Single Play")
+    gg.searchNumber("7.44413228e-25;-1.27424102e34;-2.87131023e-14:21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+    gg.refineNumber("-1.27424102e34;-2.87131023e-14", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+    gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+    gg.editAll("-2.85362618e11;-6.13017998e13", gg.TYPE_FLOAT)
   end
   
   if menu==8 then
