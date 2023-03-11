@@ -138,14 +138,14 @@ uye = "2023"
 umo = "03"
 uda = "11"
 uho = "16"
-umi = "41"
+umi = "46"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("❤Script V.0.7.1 For ~4.8.9.3.7 "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)❤\nnow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.7.1 For CPM 4.8.9.3.7\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nnow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
