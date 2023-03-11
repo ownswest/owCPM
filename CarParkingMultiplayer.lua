@@ -9,7 +9,8 @@ end
 
 function clrRs()
   gg.clearResults()
-  nowPr("Result Cleared")
+  gg.clearList()
+  nowPr("Cleared")
 end
 
 function fiveSec()
