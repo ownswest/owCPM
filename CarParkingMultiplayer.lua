@@ -134,7 +134,18 @@ else
   os.exit()
 end
 
-sta = gg.alert("❤Script V.0.7.0 2023/03/11 15:51 (UTC+9)❤\nFor ~4.8.9.3.7\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+uye = 2023
+umo = 03
+uda = 11
+uho = 16
+umi = 37
+nye = os.date('%Y')
+nmo = os.date('%m')
+nda = os.date('%d')
+nho = os.date('%H')
+nmi = os.date('%M')
+
+sta = gg.alert("❤Script V.0.7.1 "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)❤\nFor ~4.8.9.3.7\nnow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nUse at your own risk!\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
