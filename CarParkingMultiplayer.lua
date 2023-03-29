@@ -1,5 +1,5 @@
 --BSD 2-Clause License
---Copyright (c) 2022, ownswest
+--Copyright (c) 2023, ownswest
 --All rights reserved.
 
 function nowPr(msg)
