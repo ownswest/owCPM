@@ -121,7 +121,6 @@ function fifteenSec()
   gg.sleep(1000)
 end
 
-clrRs()
 gg.setVisible(false)
 
 gb = gg.BUILD
