@@ -126,26 +126,26 @@ gg.setVisible(false)
 
 gb = gg.BUILD
 if gb=='16142' then
-  nowPr("GG Build "..gb)
+  nowPr("Let's Go!")
 else
   gg.alert("Do you use the official GG app?\nThis script is available on the official GG app!")
-  nowPr("GG Build Exit")
+  nowPr("Unknown GG Build")
   gg.setVisible(true)
   os.exit()
 end
 
 uye = "2023"
 umo = "03"
-uda = "29"
-uho = "22"
-umi = "22"
+uda = "30"
+uho = "18"
+umi = "51"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.7.5 For CPM 4.8.9.3.7\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.." "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.7.7 For CPM 4.8.9.3.7\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.." "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -159,7 +159,7 @@ end
 if sta==3 then
   nowPr("Copy Link")
   gg.copyText('m.me/107792765546603')
-  gg.toast('"m.me/107792765546603" Link Copied!')
+  gg.toast('Link Copied!')
 end
 
 function run()
@@ -173,7 +173,7 @@ function run()
       '03   🚗Get Vehicle🚗',
       '04   🎟Get Money&Coin🎟',
       '05   ☢Original Server For Blacklisted Engines☢',
-      '06   🪑Access To All Drivers Seats🪑 (Beta)',
+      '06   🪑Access To All Drivers Seats🪑',
       '07   ☀Chrome☀',
       '08   🌟Body Kit🌟',
       '09   🚀Ufo🚀',
@@ -864,7 +864,7 @@ function run()
   end
   
   clrRs()
-  nowPr("Run End")
+  nowPr("Run End, And Waiting..")
   gg.toast("ヾ(≧▽≦*)o")
 end
 
