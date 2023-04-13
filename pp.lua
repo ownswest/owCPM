@@ -414,7 +414,7 @@ function run()
       end
     
       gg.editAll(snm,gg.TYPE_DWORD)
-      gg.alert('Buy The #73 In 5 Seconds')
+      gg.alert('Buy The #77 In 5 Seconds')
       gg.setVisible(false)
       nowPr("Ready To Get Vehicle")
       fiveSec()
