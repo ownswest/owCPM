@@ -21,7 +21,7 @@ function wait(a)
       a = a - 1
       gg.sleep(1000)
     else
-      gg.toast(""Time's Up! Working On The Next Thing..)
+      gg.toast("Time's Up! Working On The Next Thing..")
       return
     end
   end
