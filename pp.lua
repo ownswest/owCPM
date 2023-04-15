@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "04"
-uda = "14"
-uho = "23"
-umi = "20"
+uda = "15"
+uho = "13"
+umi = "59"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.8.5 For CPM 4.8.9.3.7\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.." "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.8.6 For CPM 4.8.9.3.7\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.." "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -758,7 +758,9 @@ function run()
     MoMo=gg.choice({
         
         '☢Original Server For Blacklisted Engines☢',
-        '🪑Access To All Drivers Seats🪑'
+        '🪑Access To All Drivers Seats🪑',
+        '🎭An Invisible Man🎭',
+        '🥇race mode🥇'
         
       },nil,'🎮Data Modification🎮')
     
@@ -789,6 +791,64 @@ function run()
       gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
       gg.editAll("-2.85362618e11;-6.13017998e13", gg.TYPE_FLOAT)
       gg.alert("No One Can Stop You!")
+    end
+  
+    if MoMo==3 then
+      nowPr("Scanning Transparency Values")
+      gg.setVisible(false)
+      Tr=gg.alert('','on','off')
+      
+      if Tr==1 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("100.0;-1000000.0;10000000.0:9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.refineNumber("100", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("900", gg.TYPE_FLOAT)
+        gg.alert("No One Can See You!")
+      end
+      
+      if Tr==2 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("900", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("100", gg.TYPE_FLOAT)
+      end
+      
+    end
+  
+    if MoMo==4 then
+      nowPr("Scanning Race Values")
+      gg.setVisible(false)
+      Ra=gg.alert('','on','off')
+      
+      if Ra==1 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("500", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("9999999", gg.TYPE_FLOAT)
+        gg.alert("No One Can Stop You!")
+      end
+      
+      if Ra==2 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("9999999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("500", gg.TYPE_FLOAT)
+      end
+      
     end
     
   end
