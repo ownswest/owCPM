@@ -799,7 +799,7 @@ function run()
   
     if MoMo==2 then
       nowPr("Scanning Transparency Values")
-      gg.setVisible(false
+      gg.setVisible(false)
       Tr=gg.alert('🎭An Invisible Man🎭','on','off')
       
       if Tr==1 then
