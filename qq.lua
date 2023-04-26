@@ -21,7 +21,7 @@ function wait(a)
       a = a - 1
       gg.sleep(1000)
     else
-      gg.toast("Time's Up! Working On The Next Thing..")
+      gg.toast("Time's Up! Working..")
       return
     end
   end
@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "04"
-uda = "24"
-uho = "22"
-umi = "30"
+uda = "26"
+uho = "20"
+umi = "21"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.9.2 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.9.4 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -325,7 +325,7 @@ function run()
       end
     
       gg.editAll(snm,gg.TYPE_DWORD)
-      gg.alert('Buy The #77 In 5 Seconds')
+      gg.alert('Buy The #79 In 5 Seconds')
       gg.setVisible(false)
       nowPr("Ready To Get Vehicle")
       wait(5)
