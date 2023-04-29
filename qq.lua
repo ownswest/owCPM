@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "04"
-uda = "26"
-uho = "20"
-umi = "21"
+uda = "29"
+uho = "18"
+umi = "12"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.9.4 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.9.6 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -688,7 +688,7 @@ function run()
     DaMo=gg.choice({
         
         '😁Long Name😁',
-        '🎟Get Money&Coin🎟'
+        ''
         
       },nil,'🎮Data Modification🎮')
     
@@ -717,46 +717,6 @@ function run()
       nowPr("Long Name Is Possible")
     end
     
-    if DaMo==2 then
-      nowPr("Get Money&Coin")
-      mny=gg.choice({
-          
-          '50,000,000 Money',
-          '500,000 Coin'
-        
-        },nil,' 『Get money』 ')
-    
-      if mny==1 then    
-        gg.setVisible(false)
-        rel=gg.alert("This Function Uses The Instagram Button At The Bottom Right Of The Main Screen.\nIf You Don't Have This Button, You need Re-login.","Go","Re-login")
-        if rel==2 then
-          return
-        end
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("5000", gg.TYPE_FLOAT)
-        gg.getResults(100)
-        gg.editAll("50000000", gg.TYPE_FLOAT)
-        gg.alert("Now Press The Instagram Button In 5 Seconds")
-        wait(5)
-        gg.editAll("5000", gg.TYPE_FLOAT)
-        gg.clearResults(100)
-      end
-    
-      if mny==2 then
-        gg.setVisible(false)
-        gg.alert("Open The Animation Purchase Window In 5 Seconds")
-        wait(5)
-        gg.setRanges(gg.REGION_ANONYMOUS)
-        gg.searchNumber("500;300", gg.TYPE_DWORD)
-        gg.sleep(100)
-        gg.refineNumber("500",gg.TYPE_DWORD)
-        gg.getResults(100)
-        gg.editAll("-500000", gg.TYPE_DWORD)
-        gg.alert("Now Refresh The Animation Window And Buy The Animation(The Last One) In 5 Seconds")
-        wait(5)
-        gg.editAll("500", gg.TYPE_FLOAT)
-      end
-    end
   end
   
   if menu==4 then
