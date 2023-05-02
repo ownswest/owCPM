@@ -40,9 +40,9 @@ else
 end
 
 uye = "2023"
-umo = "04"
-uda = "29"
-uho = "18"
+umo = "05"
+uda = "02"
+uho = "19"
 umi = "12"
 nye = os.date('%Y')
 nmo = os.date('%m')
@@ -50,7 +50,7 @@ nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.9.6 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.9.8 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -688,7 +688,7 @@ function run()
     DaMo=gg.choice({
         
         '😁Long Name😁',
-        ''
+        '💵Get Money💵'
         
       },nil,'🎮Data Modification🎮')
     
@@ -715,6 +715,10 @@ function run()
       gg.editAll("0", gg.TYPE_DWORD)
       gg.alert("Long Name!")
       nowPr("Long Name Is Possible")
+    end
+    
+    if DaMo==2 then
+      
     end
     
   end
