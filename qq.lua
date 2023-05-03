@@ -828,22 +828,22 @@ function run()
       if Bw==1 then
         gg.setVisible(false)
         gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("0.07", gg.TYPE_FLOAT)
+        gg.searchNumber("0.9", gg.TYPE_FLOAT)
         gg.setVisible(false)
         gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
         gg.setVisible(false)
-        gg.editAll("0.789", gg.TYPE_FLOAT)
+        gg.editAll("3.456", gg.TYPE_FLOAT)
         gg.alert("Reload The Vehicle!")
       end
       
       if Bw==2 then
         gg.setVisible(false)
         gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("0.789", gg.TYPE_FLOAT)
+        gg.searchNumber("3.456", gg.TYPE_FLOAT)
         gg.setVisible(false)
         gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
         gg.setVisible(false)
-        gg.editAll("0.07", gg.TYPE_FLOAT)
+        gg.editAll("0.9", gg.TYPE_FLOAT)
         gg.alert("Reload The Vehicle!")
       end
       
