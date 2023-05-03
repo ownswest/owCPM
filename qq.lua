@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "05"
-uda = "02"
+uda = "03"
 uho = "19"
-umi = "12"
+umi = "46"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.9.8 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 0.9.9 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -728,7 +728,8 @@ function run()
         
         '☢Original Server For Blacklisted Engines☢',
         '🎭An Invisible Man🎭',
-        '🥇race mode🥇'
+        '🥇race mode🥇',
+        '🎡Big Wheel🎡'
         
       },nil,'☢More Awesome Features!☢')
     
@@ -815,6 +816,35 @@ function run()
         gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
         gg.setVisible(false)
         gg.editAll("500", gg.TYPE_FLOAT)
+      end
+      
+    end
+  
+    if MoMo==4 then
+      nowPr("Scanning Wheel Size Values")
+      gg.setVisible(false)
+      Bw=gg.alert('🎡Big Wheel🎡','on','off')
+      
+      if Bw==1 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("0.07", gg.TYPE_FLOAT)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("0.123", gg.TYPE_FLOAT)
+        gg.alert("Reload The Vehicle!")
+      end
+      
+      if Bw==2 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("0.123", gg.TYPE_FLOAT)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("0.07", gg.TYPE_FLOAT)
+        gg.alert("Reload The Vehicle!")
       end
       
     end
