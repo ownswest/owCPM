@@ -43,14 +43,14 @@ uye = "2023"
 umo = "05"
 uda = "03"
 uho = "19"
-umi = "46"
+umi = "57"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 0.9.9 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.1.0 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -832,14 +832,14 @@ function run()
         gg.setVisible(false)
         gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
         gg.setVisible(false)
-        gg.editAll("0.123", gg.TYPE_FLOAT)
+        gg.editAll("0.789", gg.TYPE_FLOAT)
         gg.alert("Reload The Vehicle!")
       end
       
       if Bw==2 then
         gg.setVisible(false)
         gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("0.123", gg.TYPE_FLOAT)
+        gg.searchNumber("0.789", gg.TYPE_FLOAT)
         gg.setVisible(false)
         gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
         gg.setVisible(false)
