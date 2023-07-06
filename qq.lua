@@ -43,14 +43,14 @@ uye = "2023"
 umo = "07"
 uda = "06"
 uho = "18"
-umi = "17"
+umi = "24"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.2.8 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.2.9 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -335,10 +335,10 @@ function run()
       end
     
       gg.editAll(snm,gg.TYPE_DWORD)
-      gg.alert('Buy The #79 In 5 Seconds')
+      gg.alert('Buy The #81 In 10 Seconds')
       gg.setVisible(false)
       nowPr("Ready To Get Vehicle")
-      wait(5)
+      wait(10)
       gg.setVisible(false)
       gg.editAll(num,gg.TYPE_DWORD)
     end
