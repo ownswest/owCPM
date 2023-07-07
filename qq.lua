@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "07"
-uda = "06"
-uho = "18"
-umi = "24"
+uda = "07"
+uho = "17"
+umi = "44"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.2.9 For CPM 4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.3.4 For CPM ~4.8.9.4.4\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -244,8 +244,8 @@ function run()
             'KenBlock Ford F150 Hoonicorn (1000)',
             'KenBlock Ford Mustang Hoonicorn (1000)',
             'Mitsubishi Eclipse 2G (500)',
-            'happyhappyhappy      happyhappyhappyhappyhappy',
-            ''
+            'Mazda MX-5 NA (500)',
+            'Porsche 911 GT3 (5000)'
           
           },nil,' 『Coin』 ')
       
@@ -293,11 +293,11 @@ function run()
           snm = 388
         end
       
-        if coin==12 then --
+        if coin==12 then --Mazda MX-5 NA (500)
           snm = 391
         end
       
-        if coin==13 then --
+        if coin==13 then --Porsche 911 GT3 (5000)
           snm = 392
         end
       
