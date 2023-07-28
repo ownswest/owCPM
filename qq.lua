@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "07"
-uda = "16"
-uho = "00"
-umi = "46"
+uda = "28"
+uho = "14"
+umi = "42"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.3.8\nLast Update : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.4.1 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -63,7 +63,7 @@ end
 
 if sta==3 then
   nowPr("Copy Link")
-  gg.copyText('m.me/107792765546603')
+  gg.copyText('https://www.facebook.com/groups/354955475738080/user/100077640402419')
   gg.toast('Link Copied!')
 end
 
@@ -245,7 +245,8 @@ function run()
             'KenBlock Ford Mustang Hoonicorn (1000)',
             'Mitsubishi Eclipse 2G (500)',
             'Mazda MX-5 NA (500)',
-            'Porsche 911 GT3 (5000)'
+            'Porsche 911 GT3 (5000)',
+            '2023 F-150 Raptor (0)'
           
           },nil,' 『Coin』 ')
       
@@ -301,6 +302,10 @@ function run()
           snm = 392
         end
       
+        if coin==13 then --2023 F-150 Raptor (0)
+          snm = 393
+        end
+        
       end
     
       if car==4 then
