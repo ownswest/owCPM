@@ -40,17 +40,17 @@ else
 end
 
 uye = "2023"
-umo = "07"
-uda = "28"
-uho = "14"
-umi = "42"
+umo = "08"
+uda = "04"
+uho = "21"
+umi = "34"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.4.1 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.4.5 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -302,7 +302,7 @@ function run()
           snm = 392
         end
       
-        if coin==13 then --2023 F-150 Raptor (0)
+        if coin==14 then --2023 F-150 Raptor (0)
           snm = 393
         end
         
@@ -442,14 +442,14 @@ function run()
         gg.setVisible(false)
         gg.searchNumber("190", gg.TYPE_FLOAT)
         gg.getResults(1)
-        gg.editAll("100", gg.TYPE_FLOAT)
+        gg.editAll("99.99999", gg.TYPE_FLOAT)
         gg.clearResults(1)
         gg.sleep(500)
         gg.setRanges(gg.REGION_CODE_APP)
         gg.setVisible(false)
         gg.searchNumber("300", gg.TYPE_FLOAT)
         gg.getResults(4)
-        gg.editAll("2100", gg.TYPE_FLOAT)
+        gg.editAll("2299.999", gg.TYPE_FLOAT)
         gg.clearResults(1)
         gg.sleep(500)
         gg.setRanges(gg.REGION_CODE_APP)
