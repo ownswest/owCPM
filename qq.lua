@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "08"
-uda = "04"
+uda = "07"
 uho = "21"
-umi = "34"
+umi = "30"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.4.5 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.4.8 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -135,96 +135,96 @@ function run()
       if car==2 then
         cash=gg.choice({
           
-            'Blue F1 (₩18,000)',
-            'Red F1 (₩12,000)',
-            'Buggy (₩6,900)',
-            'Bmw M2 (₩2,700)',
-            'Bmw M4 (₩6,500)',
-            'Bmw M5 (₩3,900)',
-            'Bmw X6 (₩2,600)',
-            'Bmw M8 (₩4,800)',
-            'Bmw I8 (₩1,200)',
-            'Mercedes Benz S Class (₩3,900)',
-            'Mercedes Benz E Class (₩3,900)',
-            'Mercedes Benz GT63 (₩3,700)',
-            'Lamborghini Urus (₩2,700)',
-            'Dodge Viper (₩2,500)',
-            'Nissan R32 (₩5.500)',
-            'Nissan 180SX (₩2,700)',
-            'Nissan 350Z (₩3,700)',
-            'Toyota Camry (₩1,300)'
+            '2023 F1 car (₩18,000)',
+            '2001 F1 car (₩12,000)',
+            '2018 Ariel Nomad (₩6,900)',
+            '2016 BMW M2 F87 (₩2,700)',
+            '2020 BMW M4 Competition G82 (₩6,500)',
+            '2018 BMW M5 F90 (₩3,900)',
+            '2015 BMW X6 M F16 (₩2,600)',
+            '2017 BMW M8 Gran Coupe (₩4,800)',
+            '2014 BMW i8 (₩1,200)',
+            '2018 Mercedes Benz AMG S65 (₩3,900)',
+            '2018 Mercedes Benz AMG E43 (₩3,900)',
+            '2018 Mercedes Benz GT63 (₩3,700)',
+            '2019 Lamborghini Urus LP650-4 (₩2,700)',
+            '2015 Dodge Viper SRT (₩2,500)',
+            '1989 Nissan Skyline GT-R R32 (₩5.500)',
+            '1989 Nissan 240SX SE S13 (₩2,700)',
+            '2002 Nissan 350Z 33Z (₩3,700)',
+            '2018 Toyota Camry XV70 (₩1,300)'
           
           },nil,' 『Cash』 ')
       
-        if cash==1 then --Blue F1 (₩18,000)
+        if cash==1 then
           snm = 357
         end
       
-        if cash==2 then --Red F1 (₩12,000)
+        if cash==2 then
           snm = 341
         end
       
-        if cash==3 then --Buggy (₩6,900)
+        if cash==3 then
           snm = 356
         end
       
-        if cash==4 then --Bmw M2 (₩2,700)
+        if cash==4 then
           snm = 295
         end
       
-        if cash==5 then --Bmw M4 (₩6,500)
+        if cash==5 then
           snm = 339
         end
       
-        if cash==6 then --Bmw M5 (₩3,900)
+        if cash==6 then
           snm = 260
         end
       
-        if cash==7 then --Bmw X6 (₩2,600)
+        if cash==7 then
           snm = 280
         end
       
-        if cash==8 then --Bmw M8 (₩4,800)
+        if cash==8 then
           snm = 324
         end
       
-        if cash==9 then --Bmw I8 (₩1,200)
+        if cash==9 then
           snm = 312
         end
       
-        if cash==10 then --Mercedes Benz S Class (₩3,900)
+        if cash==10 then
           snm = 310
         end
       
-        if cash==11 then --Mercedes Benz E Class (₩3,900)
+        if cash==11 then
           snm = 276
         end
       
-        if cash==12 then --Mercedes Benz GT63 (₩3,700)
+        if cash==12 then
           snm = 322
         end
       
-        if cash==13 then --Lamborghini Urus (₩2,700)
+        if cash==13 then
           snm = 293
         end
       
-        if cash==14 then --Dodge Viper (₩2,500)
+        if cash==14 then
           snm = 321
         end
       
-        if cash==15 then --Nissan R32 (₩5.500)
+        if cash==15 then
           snm = 342
         end
       
-        if cash==16 then --Nissan 180SX (₩2,700)
+        if cash==16 then
           snm = 305
         end
       
-        if cash==17 then --Nissan 350Z (₩3,700)
+        if cash==17 then
           snm = 325
         end
       
-        if cash==18 then --Toyota Camry (₩1,300)
+        if cash==18 then
           snm = 288
         end
       
@@ -233,76 +233,76 @@ function run()
       if car==3 then
         coin=gg.choice({
           
-            'Jeep Grand Cherokee (300)',
-            'McLaren 720S (500)',
-            'Chevrolet Corvette C8 (500)',
-            'Bentley Continental GT (500)',
-            'Kenworth T680 (1000)',
-            'Mercedes Benz W210 E55 (500)',
-            'Chevrolet Silverado (500)',
-            'Bugatti Chiron (500)',
-            'KenBlock Ford F150 Hoonicorn (1000)',
-            'KenBlock Ford Mustang Hoonicorn (1000)',
-            'Mitsubishi Eclipse 2G (500)',
-            'Mazda MX-5 NA (500)',
-            'Porsche 911 GT3 (5000)',
-            '2023 F-150 Raptor (0)'
+            '2017 Jeep Grand Cherokee (300)',
+            '2017 McLaren 720S (500)',
+            '2020 Chevrolet Corvette C8 (500)',
+            '2021 Bentley Continental GT (500)',
+            '2013 Kenworth T680 6*4 (1000)',
+            '1995 Mercedes-Benz W210 Classic (500)',
+            '1991 Chevrolet Cheyenne C10 (500)',
+            '2017 Bugatti Chiron (500)',
+            '1977 Ford F-150 Hoonicorn (1000)',
+            '1965 Ford Mustang Boss 302 Hoonicorn (1000)',
+            '1995 Mitsubishi Eclipse G2 (500)',
+            '1989 Mazda MX-5/Miata NA (500)',
+            '2022 Porsche 911 GT3 (5000)',
+            '2018 Ford F-150 Raptor P552 (1000)'
           
           },nil,' 『Coin』 ')
       
-        if coin==1 then --Jeep Grand Cherokee (300)
+        if coin==1 then
           snm = 353
         end
       
-        if coin==2 then --McLaren 720S (500)
+        if coin==2 then
           snm = 354
         end
       
-        if coin==3 then --Chevrolet Corvette C8 (500)
+        if coin==3 then
           snm = 358
         end
       
-        if coin==4 then --Bentley Continental GT (500)
+        if coin==4 then
           snm = 361
         end
       
-        if coin==5 then --Kenworth T680 (1000)
+        if coin==5 then
           snm = 368
         end
       
-        if coin==6 then --Mercedes Benz W210 E55 (500)
+        if coin==6 then
           snm = 373
         end
       
-        if coin==7 then --Chevrolet Silverado (500)
+        if coin==7 then
           snm = 374
         end
       
-        if coin==8 then --Bugatti Chiron (500)
+        if coin==8 then
           snm = 376
         end
       
-        if coin==9 then --KenBlock Ford F150 Hoonicorn (1000)
+        if coin==9 then
           snm = 386
         end
       
-        if coin==10 then --KenBlock Ford Mustang Hoonicorn (1000)
+        if coin==10 then
           snm = 387
         end
       
-        if coin==11 then --Mitsubishi Eclipse 2G (500)
+        if coin==11 then
           snm = 388
         end
       
-        if coin==12 then --Mazda MX-5 NA (500)
+        if coin==12 then
           snm = 391
         end
       
-        if coin==13 then --Porsche 911 GT3 (5000)
+        if coin==13 then
           snm = 392
         end
       
-        if coin==14 then --2023 F-150 Raptor (0)
+        if coin==14 then
           snm = 393
         end
         
@@ -316,11 +316,11 @@ function run()
           
           },nil,'')
       
-        if rwad==1 then --Dodge Ram (7 Days)
+        if rwad==1 then
           snm = 359
         end
       
-        if rwad==2 then --Mercedes Benz Cls (14 Days)
+        if rwad==2 then
           snm = 371
         end
       
@@ -354,7 +354,7 @@ function run()
         
           '1695hp(7000)\n2254nm(3500)',
           '1695.999hp(1000)\n2254.999nm(1010)',
-          '100hp(8000)\n2100nm(7900)',
+          '99.99999hp(8000)\n2299.999nm(7900)',
           'Fast Gearbox(1E-10S)',
           '1790hp(7000)\n2300nm(3500)',
           '2000hp(7000)\n3000nm(3500)'
