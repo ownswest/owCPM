@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "08"
-uda = "07"
+uda = "11"
 uho = "21"
-umi = "30"
+umi = "40"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.4.8 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.5.0 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -357,7 +357,8 @@ function run()
           '99.99999hp(8000)\n2299.999nm(7900)',
           'Fast Gearbox(1E-10S)',
           '1790hp(7000)\n2300nm(3500)',
-          '2000hp(7000)\n3000nm(3500)'
+          '2000hp(7000)\n3000nm(3500)',
+          '1hp(8000)\n2899nm(7900)'
         
         },nil,' 『Engine』 ')
     
@@ -571,6 +572,37 @@ function run()
         gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
       end
     
+      if egn==7 then      
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.setVisible(false)
+        gg.searchNumber("190", gg.TYPE_FLOAT)
+        gg.getResults(1)
+        gg.editAll("1", gg.TYPE_FLOAT)
+        gg.clearResults(1)
+        gg.sleep(500)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.setVisible(false)
+        gg.searchNumber("300", gg.TYPE_FLOAT)
+        gg.getResults(4)
+        gg.editAll("2899", gg.TYPE_FLOAT)
+        gg.clearResults(1)
+        gg.sleep(500)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.setVisible(false)
+        gg.searchNumber("5900", gg.TYPE_FLOAT)
+        gg.getResults(1)
+        gg.editAll("8000", gg.TYPE_FLOAT)
+        gg.clearResults(2)
+        gg.sleep(500)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.setVisible(false)
+        gg.searchNumber("4100", gg.TYPE_FLOAT)
+        gg.getResults(1)
+        gg.editAll("7900", gg.TYPE_FLOAT)
+        gg.clearResults(3)
+        gg.alert("Buy This Engine : L4 2.5")
+      end
+    
     end
     
     if VeMo==3 then
@@ -751,19 +783,51 @@ function run()
     if MoMo==1 then
       nowPr("Scanning Server Values")
       gg.setVisible(false)
-      gg.alert("Go To Main Menu")
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("1790;2300", gg.TYPE_FLOAT)
-      gg.getResults(2)
-      gg.editAll("3.4E+38", gg.TYPE_FLOAT)
-      gg.clearResults(2)
-      gg.setRanges(gg.REGION_CODE_APP)
-      gg.searchNumber("100", gg.TYPE_FLOAT)
-      gg.getResults(100)
-      gg.editAll("-3.4E+38", gg.TYPE_FLOAT)
-      gg.alert("Go To The Online Menu In 5 Seconds")
-      wait(5)
-      gg.editAll("100", gg.TYPE_FLOAT)
+      HPnim = 90
+      HPmax = 1790
+      NMmax = 2300
+      Sv=gg.alert('☢Original Server For Blacklisted Engines☢','on','off')
+      
+      if Sv==1 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber(HPmax, gg.TYPE_FLOAT)
+        gg.getResults(2)
+        gg.editAll("99998", gg.TYPE_FLOAT)
+        gg.clearResults(2)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber(NMmax, gg.TYPE_FLOAT)
+        gg.getResults(2)
+        gg.editAll("99999", gg.TYPE_FLOAT)
+        gg.clearResults(2)        
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber(HPnim, gg.TYPE_FLOAT)
+        gg.getResults(100)
+        gg.editAll("-99999", gg.TYPE_FLOAT)
+        gg.clearResults(2)
+        gg.alert("Go To The Online Menu In 5 Seconds. Let's Go!")
+      end
+      
+      if Sv==2 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("99998", gg.TYPE_FLOAT)
+        gg.getResults(2)
+        gg.editAll(HPmax, gg.TYPE_FLOAT)
+        gg.clearResults(2)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("99999", gg.TYPE_FLOAT)
+        gg.getResults(2)
+        gg.editAll(NMmax, gg.TYPE_FLOAT)
+        gg.clearResults(2)        
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("-99999", gg.TYPE_FLOAT)
+        gg.getResults(100)
+        gg.editAll(HPnim, gg.TYPE_FLOAT)
+        gg.clearResults(2)
+        gg.alert("Go To The Online Menu In 5 Seconds. Let's Go!")
+      end
+      
     end
   
     --if MoMo==0 then
