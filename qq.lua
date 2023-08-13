@@ -42,15 +42,15 @@ end
 uye = "2023"
 umo = "08"
 uda = "13"
-uho = "19"
-umi = "24"
+uho = "20"
+umi = "41"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.5.2 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.5.4 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -805,7 +805,7 @@ function run()
         gg.getResults(100)
         gg.editAll("-99999", gg.TYPE_FLOAT)
         gg.clearResults(2)
-        gg.alert("Go To The Online Menu In 5 Seconds. Let's Go!")
+        gg.alert("Now Try Connecting To The Server! Turn Off This Feature After Connecting To The Server.")
       end
       
       if Sv==2 then
@@ -825,7 +825,7 @@ function run()
         gg.getResults(100)
         gg.editAll(HPnim, gg.TYPE_FLOAT)
         gg.clearResults(2)
-        gg.alert("Go To The Online Menu In 5 Seconds. Let's Go!")
+        gg.alert("Off")
       end
       
     end
