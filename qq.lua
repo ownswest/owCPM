@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "08"
-uda = "13"
-uho = "20"
-umi = "41"
+uda = "15"
+uho = "00"
+umi = "15"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.5.4 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.5.6 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -350,259 +350,85 @@ function run()
     
     if VeMo==2 then
       nowPr("Scanning Engine Values")
-      egn=gg.choice({
+      function engine(A, a, B, b)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.clearResults(100)
         
-          '1695hp(7000)\n2254nm(3500)',
-          '1695.999hp(1000)\n2254.999nm(1010)',
-          '99.99999hp(8000)\n2299.999nm(7900)',
-          'Fast Gearbox(1E-10S)',
-          '1790hp(7000)\n2300nm(3500)',
-          '2000hp(7000)\n3000nm(3500)',
-          '1hp(8000)\n2899nm(7900)'
+        gg.searchNumber("190", gg.TYPE_FLOAT)
+        HP = gg.getResults(100)
+        for i, v in ipairs(HP) do
+          HP[i].value = A
+          HP[i].freeze = true
+        end
+        gg.addListItems(HP)
+        gg.clearResults(100)
         
-        },nil,' 『Engine』 ')
-    
-      if egn==1 then
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("5900", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("7000", gg.TYPE_FLOAT)
-        gg.clearResults(2)
         gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("4100", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("3500", gg.TYPE_FLOAT)
-        gg.clearResults(3)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("190", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1695", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("1120", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1695", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
+        
         gg.searchNumber("300", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2254", gg.TYPE_FLOAT)
-        gg.clearResults(1)
+        NM = gg.getResults(100)
+        for i, v in ipairs(NM) do
+          NM[i].value = B
+          NM[i].freeze = true
+        end
+        gg.addListItems(NM)
+        gg.clearResults(100)
+        
         gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("1250", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2254", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
-      end      
-    
-      if egn==2 then
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("190", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1695.999", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("300", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2254.999", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
+        
         gg.searchNumber("5900", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1000", gg.TYPE_FLOAT)
-        gg.clearResults(2)
+        hpn = gg.getResults(100)
+        for i, v in ipairs(hpn) do
+          hpn[i].value = a
+          hpn[i].freeze = true
+        end
+        gg.addListItems(hpn)
+        gg.clearResults(100)
+        
         gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
+        
         gg.searchNumber("4100", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1010", gg.TYPE_FLOAT)
-        gg.clearResults(3)
+        nmn = gg.getResults(100)
+        for i, v in ipairs(nmn) do
+          nmn[i].value = b
+          nmn[i].freeze = true
+        end
+        gg.addListItems(nmn)
+        gg.clearResults(100)
+        
         gg.alert("Buy This Engine : L4 2.5")
       end
-    
-      if egn==3 then      
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("190", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("99.99999", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("300", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2299.999", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("5900", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("8000", gg.TYPE_FLOAT)
-        gg.clearResults(2)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("4100", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("7900", gg.TYPE_FLOAT)
-        gg.clearResults(3)
-        gg.alert("Buy This Engine : L4 2.5")
+      
+      e=gg.choice({
+          
+          '1695hp(7000) 2254nm(3500)',
+          '1695.999hp(1000) 2254.999nm(1010)',
+          '99.99999hp(8000) 2299.999nm(7900)',
+          '1hp(8000) 3000nm(7900)',
+          '2000hp(7000) 3000nm(3500)'
+          
+        },nil,'haha')
+      
+      if e==1 then
+        engine(1695, 7000, 2254, 3500)
       end
-    
-      if egn==4 then
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("0.1", gg.TYPE_FLOAT)
-        gg.getResults(47)
-        gg.editAll("0.0000000001", gg.TYPE_FLOAT)
-        gg.alert("Buy This Engine In 5 Seconds : Fast Gearbox")
-        wait(5)
-        gg.setVisible(false)
-        gg.editAll("0.1", gg.TYPE_FLOAT)
-        gg.clearResults(47)
+      
+      if e==2 then
+        engine(1695.999, 1000, 2254.999, 1010)
       end
-    
-      if egn==5 then    
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("5900", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("7000", gg.TYPE_FLOAT)
-        gg.clearResults(2)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("4100", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("3500", gg.TYPE_FLOAT)
-        gg.clearResults(3)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("190", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1790", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("1120", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1790", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("300", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2300", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("1250", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2300", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
+      
+      if e==3 then
+        engine(99.99999, 8000, 2299.999, 7900)
       end
-    
-      if egn==6 then    
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("5900", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("7000", gg.TYPE_FLOAT)
-        gg.clearResults(2)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("4100", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("3500", gg.TYPE_FLOAT)
-        gg.clearResults(3)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("190", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("2000", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("1120", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("2000", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("300", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("3000", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("1250", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("3000", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.alert("Buy This Engine : L4 2.5 or W16 8.0")
+      
+      if e==4 then
+        engine(1, 8000, 3000, 7900)
       end
-    
-      if egn==7 then      
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("190", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("1", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("300", gg.TYPE_FLOAT)
-        gg.getResults(4)
-        gg.editAll("2899", gg.TYPE_FLOAT)
-        gg.clearResults(1)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("5900", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("8000", gg.TYPE_FLOAT)
-        gg.clearResults(2)
-        gg.sleep(500)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.setVisible(false)
-        gg.searchNumber("4100", gg.TYPE_FLOAT)
-        gg.getResults(1)
-        gg.editAll("7900", gg.TYPE_FLOAT)
-        gg.clearResults(3)
-        gg.alert("Buy This Engine : L4 2.5")
+      
+      if e==5 then
+        engine(2000, 7000, 3000, 3500)
       end
-    
+      
     end
     
     if VeMo==3 then
