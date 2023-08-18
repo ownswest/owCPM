@@ -43,14 +43,14 @@ uye = "2023"
 umo = "08"
 uda = "18"
 uho = "22"
-umi = "06"
+umi = "10"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.5.9 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.6.1 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -733,7 +733,7 @@ function run()
       if Hh==1 then
         gg.setVisible(false)
         gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("0.34, gg.TYPE_FLOAT)
+        gg.searchNumber("0.34", gg.TYPE_FLOAT)
         gg.setVisible(false)
         gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
         gg.setVisible(false)
