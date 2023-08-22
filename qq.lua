@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "08"
-uda = "18"
-uho = "22"
-umi = "10"
+uda = "23"
+uho = "00"
+umi = "11"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.6.1 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.6.4 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -728,30 +728,17 @@ function run()
     if MoMo==4 then
       nowPr("Scanning Vehicle Height Adjustment Values")
       gg.setVisible(false)
-      Hh=gg.alert('🎡Vehicle Height Adjustment🎡','on','off')
-      
-      if Hh==1 then
-        gg.setVisible(false)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("0.34", gg.TYPE_FLOAT)
-        gg.setVisible(false)
-        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
-        gg.setVisible(false)
-        gg.editAll("1.034", gg.TYPE_FLOAT)
-        gg.alert("Reload The Vehicle!")
-      end
-      
-      if Hh==2 then
-        gg.setVisible(false)
-        gg.setRanges(gg.REGION_CODE_APP)
-        gg.searchNumber("1.034", gg.TYPE_FLOAT)
-        gg.setVisible(false)
-        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
-        gg.setVisible(false)
-        gg.editAll("0.34", gg.TYPE_FLOAT)
-        gg.alert("Reload The Vehicle!")
-      end
-      
+      Hh = gg.prompt({'Current Value[0; 10]','Change value[0; 10]'},{0, 0},{'number', 'number'})
+      He1 = Hh[1] + 0.34
+      He2 = Hh[2] + 0.34
+      gg.setVisible(false)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber(He1, gg.TYPE_FLOAT)
+      gg.setVisible(false)
+      gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+      gg.setVisible(false)
+      gg.editAll(He2, gg.TYPE_FLOAT)
+      gg.alert("Reload The Vehicle!")
     end
     
   end
