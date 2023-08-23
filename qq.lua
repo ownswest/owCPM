@@ -42,15 +42,15 @@ end
 uye = "2023"
 umo = "08"
 uda = "24"
-uho = "00"
-umi = "50"
+uho = "01"
+umi = "03"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.8.4 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.8.6 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -463,7 +463,7 @@ function run()
       gg.sleep(100)
       gg.refineNumber('1',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      cr = gg.getResults(6)
+      cr = gg.getResults(100)
       CR = gg.prompt({'Red', 'Green', 'Blue'},{cr[1]['value'], cr[2]['value'], cr[3]['value']},{'number', 'number', 'number'})
       CR[4] = CR[1]
       CR[5] = CR[2]
