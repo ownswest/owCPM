@@ -42,15 +42,15 @@ end
 uye = "2023"
 umo = "08"
 uda = "23"
-uho = "00"
-umi = "11"
+uho = "21"
+umi = "07"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.6.4 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.6.5 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -329,12 +329,17 @@ function run()
       if car==5 then
         unac=gg.choice({
           
-            'H1'
+            'H1',
+            'X6'
           
           },nil,'')
       
-        if unac==1 then --H1
+        if unac==1 then
           snm = 281
+        end
+      
+        if unac==2 then
+          snm = 80
         end
       
       end
@@ -435,23 +440,22 @@ function run()
       nowPr("Scanning Chrome Values")
       gg.setVisible(false)
       gg.setRanges(gg.REGION_ANONYMOUS)
-      gg.alert("You want the original server?\nDon't do this part!\n\n[CAR-REFLECTION]")
       gg.setVisible(false)
       gg.alert('#FFFFFF In 10 Seconds 1/4')
       wait(10)
       gg.searchNumber('1',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      gg.alert('#000000 In 5 Seconds 2/4')
+      gg.alert('#336699 In 5 Seconds 2/4')
       wait(5)
-      gg.refineNumber('0;0;0',gg.TYPE_FLOAT)
+      gg.refineNumber('0.2;0.4;0.6',gg.TYPE_FLOAT)
       gg.sleep(100)
-      gg.refineNumber('0;0;0',gg.TYPE_FLOAT)
+      gg.refineNumber('0.2;0.4;0.6',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      gg.alert('#FFFFFF In 5 Seconds 3/4')
+      gg.alert('#CC9966 In 5 Seconds 3/4')
       wait(5)
-      gg.refineNumber('1;1;1',gg.TYPE_FLOAT)
+      gg.refineNumber('0.8;0.6;0.4',gg.TYPE_FLOAT)
       gg.sleep(100)
-      gg.refineNumber('1;1;1',gg.TYPE_FLOAT)
+      gg.refineNumber('0.8;0.6;0.4',gg.TYPE_FLOAT)
       gg.setVisible(false)
       gg.alert('#000000 In 5 Seconds 4/4')
       wait(5)
@@ -459,14 +463,14 @@ function run()
       gg.sleep(100)
       gg.refineNumber('0;0;0',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      CR = gg.prompt({''},{[1]='3'},{[1]='number'})
-      gg.refineNumber('0;0;0',gg.TYPE_FLOAT)    
+      CR = gg.prompt({'','',''},{[1]='Red', [2]='Green', [3]='Blue'},{[1]='number', [2]='number', [3]='number'})
+      gg.refineNumber(0,gg.TYPE_FLOAT)    
       gg.sleep(100)
       gg.getResults(100)
-      gg.editAll(CR[1],gg.TYPE_FLOAT)
+      gg.editAll(CR[1];CR[2];CR[3],gg.TYPE_FLOAT)
       gg.sleep(100)
       gg.setVisible(false)
-      nowPr("Value : "..CR[1])
+      nowPr("Value : "..CR[1],CR[2],CR[3])
     end
     
     if VeMo==4 then
