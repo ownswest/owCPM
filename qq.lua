@@ -43,14 +43,14 @@ uye = "2023"
 umo = "08"
 uda = "23"
 uho = "21"
-umi = "07"
+umi = "12"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.6.5 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.6.6 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -467,10 +467,13 @@ function run()
       gg.refineNumber(0,gg.TYPE_FLOAT)    
       gg.sleep(100)
       gg.getResults(100)
-      gg.editAll(CR[1];CR[2];CR[3],gg.TYPE_FLOAT)
+      Cr = CR[1]
+      Cg = CR[2]
+      Cb = CR[3]
+      gg.editAll(Cr;Cg;Cb,gg.TYPE_FLOAT)
       gg.sleep(100)
       gg.setVisible(false)
-      nowPr("Value : "..CR[1],CR[2],CR[3])
+      nowPr("Value : "..Cr,Cg,Cb)
     end
     
     if VeMo==4 then
