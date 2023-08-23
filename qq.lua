@@ -43,14 +43,14 @@ uye = "2023"
 umo = "08"
 uda = "23"
 uho = "21"
-umi = "27"
+umi = "47"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.7.2 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.7.3 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -457,11 +457,11 @@ function run()
       gg.sleep(100)
       gg.refineNumber('0.8;0.6;0.4',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      gg.alert('#000000 In 6 Seconds 4/4')
+      gg.alert('#FFFFFF In 6 Seconds 4/4')
       wait(6)
-      gg.refineNumber('0',gg.TYPE_FLOAT)
+      gg.refineNumber('1',gg.TYPE_FLOAT)
       gg.sleep(100)
-      gg.refineNumber('0',gg.TYPE_FLOAT)
+      gg.refineNumber('1',gg.TYPE_FLOAT)
       gg.setVisible(false)
       CR = gg.prompt({''},{[1]='3'},{[1]='number'})
       gg.sleep(100)
