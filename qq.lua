@@ -43,14 +43,14 @@ uye = "2023"
 umo = "08"
 uda = "24"
 uho = "00"
-umi = "26"
+umi = "50"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.8.2 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.8.4 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -465,18 +465,19 @@ function run()
       gg.setVisible(false)
       cr = gg.getResults(6)
       CR = gg.prompt({'Red', 'Green', 'Blue'},{cr[1]['value'], cr[2]['value'], cr[3]['value']},{'number', 'number', 'number'})
-      cr[1].value = CR[1]
-      cr[1].freeze = true
-      cr[2].value = CR[2]
-      cr[2].freeze = true
-      cr[3].value = CR[3]
-      cr[3].freeze = true
-      cr[4].value = CR[1]
-      cr[4].freeze = true
-      cr[5].value = CR[2]
-      cr[5].freeze = true
-      cr[6].value = CR[3]
-      cr[6].freeze = true
+      CR[4] = CR[1]
+      CR[5] = CR[2]
+      CR[6] = CR[3]
+      CR[7] = CR[1]
+      CR[8] = CR[2]
+      CR[9] = CR[3]
+      CR[10] = CR[1]
+      CR[11] = CR[2]
+      CR[12] = CR[3]
+      for i, v in ipairs(cr) do
+        cr[i].value = CR[i]
+        cr[i].freeze = true
+      end
       gg.addListItems(cr)
       gg.sleep(1000)
       gg.setVisible(false)
