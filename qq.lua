@@ -43,14 +43,14 @@ uye = "2023"
 umo = "08"
 uda = "23"
 uho = "21"
-umi = "12"
+umi = "27"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.6.6 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.7.2 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -445,35 +445,31 @@ function run()
       wait(10)
       gg.searchNumber('1',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      gg.alert('#336699 In 5 Seconds 2/4')
-      wait(5)
+      gg.alert('#336699 In 6 Seconds 2/4')
+      wait(6)
       gg.refineNumber('0.2;0.4;0.6',gg.TYPE_FLOAT)
       gg.sleep(100)
       gg.refineNumber('0.2;0.4;0.6',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      gg.alert('#CC9966 In 5 Seconds 3/4')
-      wait(5)
+      gg.alert('#CC9966 In 6 Seconds 3/4')
+      wait(6)
       gg.refineNumber('0.8;0.6;0.4',gg.TYPE_FLOAT)
       gg.sleep(100)
       gg.refineNumber('0.8;0.6;0.4',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      gg.alert('#000000 In 5 Seconds 4/4')
-      wait(5)
-      gg.refineNumber('0;0;0',gg.TYPE_FLOAT)
+      gg.alert('#000000 In 6 Seconds 4/4')
+      wait(6)
+      gg.refineNumber('0',gg.TYPE_FLOAT)
       gg.sleep(100)
-      gg.refineNumber('0;0;0',gg.TYPE_FLOAT)
+      gg.refineNumber('0',gg.TYPE_FLOAT)
       gg.setVisible(false)
-      CR = gg.prompt({'','',''},{[1]='Red', [2]='Green', [3]='Blue'},{[1]='number', [2]='number', [3]='number'})
-      gg.refineNumber(0,gg.TYPE_FLOAT)    
+      CR = gg.prompt({''},{[1]='3'},{[1]='number'})
       gg.sleep(100)
       gg.getResults(100)
-      Cr = CR[1]
-      Cg = CR[2]
-      Cb = CR[3]
-      gg.editAll(Cr;Cg;Cb,gg.TYPE_FLOAT)
+      gg.editAll(CR[1],gg.TYPE_FLOAT)
       gg.sleep(100)
       gg.setVisible(false)
-      nowPr("Value : "..Cr,Cg,Cb)
+      nowPr("Value : "..CR[1])
     end
     
     if VeMo==4 then
