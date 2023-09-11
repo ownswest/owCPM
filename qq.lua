@@ -42,8 +42,8 @@ end
 uye = "2023"
 umo = "09"
 uda = "11"
-uho = "22"
-umi = "56"
+uho = "23"
+umi = "02"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
@@ -246,7 +246,7 @@ function run()
             '1995 Mitsubishi Eclipse G2 (500)',
             '1989 Mazda MX-5/Miata NA (500)',
             '2022 Porsche 911 GT3 (5000)',
-            '2018 Ford F-150 Raptor P552 (1000)'
+            '2018 Ford F-150 Raptor P552 (1000)',
             '400',
             '401',
             '402',
