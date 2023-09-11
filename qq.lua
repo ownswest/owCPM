@@ -40,17 +40,17 @@ else
 end
 
 uye = "2023"
-umo = "08"
-uda = "24"
-uho = "01"
-umi = "03"
+umo = "09"
+uda = "11"
+uho = "22"
+umi = "56"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.8.6 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.8.9 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -247,6 +247,10 @@ function run()
             '1989 Mazda MX-5/Miata NA (500)',
             '2022 Porsche 911 GT3 (5000)',
             '2018 Ford F-150 Raptor P552 (1000)'
+            '400',
+            '401',
+            '402',
+            '403'
           
           },nil,' 『Coin』 ')
       
@@ -304,6 +308,22 @@ function run()
       
         if coin==14 then
           snm = 393
+        end
+      
+        if coin==15 then
+          snm = 400
+        end
+      
+        if coin==16 then
+          snm = 401
+        end
+      
+        if coin==17 then
+          snm = 402
+        end
+      
+        if coin==18 then
+          snm = 403
         end
         
       end
