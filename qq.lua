@@ -41,16 +41,16 @@ end
 
 uye = "2023"
 umo = "09"
-uda = "11"
-uho = "23"
-umi = "08"
+uda = "18"
+uho = "00"
+umi = "14"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.9.0 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.9.1 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -631,13 +631,14 @@ function run()
         
         '☢Original Server For Blacklisted Engines☢',
         '🎭An Invisible Man🎭',
-        '🥇race mode🥇',
-        '🎡Vehicle Height Adjustment🎡'
+        '🥇Race Mode🥇',
+        '🎡Vehicle Height Adjustment🎡',
+        '🤪Crazy Car🤪'
         
       },nil,'☢More Awesome Features!☢')
     
     if MoMo==1 then
-      nowPr("Scanning Server Values")
+      nowPr("Original Server For Blacklisted Engines")
       gg.setVisible(false)
       HPnim = 90
       HPmax = 1790
@@ -698,7 +699,7 @@ function run()
     --end
   
     if MoMo==2 then
-      nowPr("Scanning Transparency Values")
+      nowPr("An Invisible Man")
       gg.setVisible(false)
       Tr=gg.alert('🎭An Invisible Man🎭','on','off')
       
@@ -728,7 +729,7 @@ function run()
     end
   
     if MoMo==3 then
-      nowPr("Scanning Race Values")
+      nowPr("Race Mode")
       gg.setVisible(false)
       Ra=gg.alert('🥇race mode🥇','on','off')
       
@@ -756,7 +757,7 @@ function run()
     end
   
     if MoMo==4 then
-      nowPr("Scanning Vehicle Height Adjustment Values")
+      nowPr("Vehicle Height Adjustment")
       gg.setVisible(false)
       Hh = gg.prompt({'Current Value[0; 10]','Change value[0; 10]'},{0, 0},{'number', 'number'})
       He1 = Hh[1] + 0.34
@@ -769,6 +770,34 @@ function run()
       gg.setVisible(false)
       gg.editAll(He2, gg.TYPE_FLOAT)
       gg.alert("Reload The Vehicle!")
+    end
+  
+    if MoMo==5 then
+      nowPr("Crazy Car")
+      gg.setVisible(false)
+      Cc=gg.alert('🤪Crazy Car🤪','on','off')
+      
+      if Cc==1 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("10000000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("-99", gg.TYPE_FLOAT)
+        gg.alert("No One Can Stop You!")
+      end
+      
+      if Cc==2 then
+        gg.setVisible(false)
+        gg.setRanges(gg.REGION_CODE_APP)
+        gg.searchNumber("-99", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+        gg.setVisible(false)
+        gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+        gg.setVisible(false)
+        gg.editAll("10000000", gg.TYPE_FLOAT)
+      end
+      
     end
     
   end
