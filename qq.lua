@@ -40,17 +40,17 @@ else
 end
 
 uye = "2023"
-umo = "11"
-uda = "20"
-uho = "07"
-umi = "02"
+umo = "12"
+uda = "16"
+uho = "14"
+umi = "06"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.9.7 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 1.90.80 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -641,8 +641,8 @@ function run()
       nowPr("Original Server For Blacklisted Engines")
       gg.setVisible(false)
       HPnim = 90
-      HPmax = 1790
-      NMmax = 2800
+      HPmax = 1700
+      NMmax = 2300
       Sv=gg.alert('☢Original Server For Blacklisted Engines☢','on','off')
       
       if Sv==1 then
