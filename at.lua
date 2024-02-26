@@ -39,18 +39,18 @@ else
   os.exit()
 end
 
-uye = "2023"
-umo = "12"
-uda = "16"
-uho = "14"
-umi = "06"
+uye = "2024"
+umo = "02"
+uda = "26"
+uho = "19"
+umi = "37"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
 nho = os.date('%H')
 nmi = os.date('%M')
 
-sta = gg.alert("Script Ver 1.90.80 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
+sta = gg.alert("Script Ver 2.00.12 : "..uye.."/"..umo.."/"..uda.." "..uho..":"..umi.." (UTC+9)\nNow : "..nye.."/"..nmo.."/"..nda.." "..nho..":"..nmi.."\nLocale : "..gg.getLocale().."\n\nBSD 2-Clause License\nCopyright (c) 2023, ownswest\nAll rights reserved.","🌞Start🌞","☀Hide☀","🔗Copy Link🔗")
 
 if sta==1 then
   gg.setVisible(true)
@@ -630,6 +630,7 @@ function run()
     MoMo=gg.choice({
         
         '☢Original Server For Blacklisted Engines☢',
+        'Driver',
         '🎭An Invisible Man🎭',
         '🥇Race Mode🥇',
         '🎡Vehicle Height Adjustment🎡',
@@ -687,18 +688,18 @@ function run()
       
     end
   
-    --if MoMo==0 then
-      --nowPr("Scanning Seat Values")
-      --gg.setVisible(false)
-      --gg.setRanges(gg.REGION_CODE_APP)
-      --gg.searchNumber("7.44413228e-25;-1.27424102e34;-2.87131023e-14:21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-      --gg.refineNumber("-1.27424102e34;-2.87131023e-14", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-      --gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
-      --gg.editAll("-2.85362618e11;-6.13017998e13", gg.TYPE_FLOAT)
-      --gg.alert("No One Can Stop You!")
-    --end
-  
     if MoMo==2 then
+      nowPr("Scanning Seat Values")
+      gg.setVisible(false)
+      gg.setRanges(gg.REGION_CODE_APP)
+      gg.searchNumber("7.44413228e-25;-1.27424102e34;-2.87131023e-14:21", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+      gg.refineNumber("-1.27424102e34;-2.87131023e-14", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+      gg.getResults(99999, nil, nil, nil, nil, nil, nil, nil, nil)
+      gg.editAll("-2.85362618e11;-6.13017998e13", gg.TYPE_FLOAT)
+      gg.alert("No One Can Stop You!")
+    end
+  
+    if MoMo==3 then
       nowPr("An Invisible Man")
       gg.setVisible(false)
       Tr=gg.alert('🎭An Invisible Man🎭','on','off')
@@ -728,7 +729,7 @@ function run()
       
     end
   
-    if MoMo==3 then
+    if MoMo==4 then
       nowPr("Race Mode")
       gg.setVisible(false)
       Ra=gg.alert('🥇race mode🥇','on','off')
@@ -756,7 +757,7 @@ function run()
       
     end
   
-    if MoMo==4 then
+    if MoMo==5 then
       nowPr("Vehicle Height Adjustment")
       gg.setVisible(false)
       Hh = gg.prompt({'Current Value[0; 10]','Change value[0; 10]'},{0, 0},{'number', 'number'})
@@ -772,7 +773,7 @@ function run()
       gg.alert("Reload The Vehicle!")
     end
   
-    if MoMo==5 then
+    if MoMo==6 then
       nowPr("Crazy Car")
       gg.setVisible(false)
       Cc=gg.alert('🤪Crazy Car🤪','on','off')
