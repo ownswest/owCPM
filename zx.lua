@@ -40,10 +40,10 @@ else
 end
 
 uye = "2024"
-umo = "02"
-uda = "26"
-uho = "19"
-umi = "37"
+umo = "03"
+uda = "02"
+uho = "11"
+umi = "04"
 nye = os.date('%Y')
 nmo = os.date('%m')
 nda = os.date('%d')
